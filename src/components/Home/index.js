@@ -10,6 +10,12 @@ const [letterClass, setLetterClass]= useState('text-animate')
 const nameArray=['l','o', 'r','e', 'n', 't', 'i', 'n', 'a', ' ', 'S', 'i', 'm', 'i', 'o', 'n']
 const jobArray=['W', 'e', 'b',' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r','.']
 
+useEffect (()=>{
+    return setTimeout(()=>{
+        setLetterClass('text-animate-hover')
+    }, 4000)
+},[])
+
     return(
         <div className="container home-page">
             <div className="text-zone">
