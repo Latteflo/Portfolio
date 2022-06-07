@@ -7,7 +7,7 @@
   .top-tags {
     bottom: auto;
     top: 35px;
-    
+
   }
   
   .top-tag-html {
@@ -110,14 +110,14 @@
           animation-delay: 1.3s;
         }
 
-        &:first-child:before{
+        &:first-of-type:before{
             content: '<p>';
             font-family: 'La Belle Aurore', cursive;
             color: #ffd700;
             font-size: 16px;
             position: absolute;
-            margin-top: -10px;
-            left: -10px;
+            margin-top: -20px;
+            left: -30px;
             opacity: 0.6;
             line-height: 16px;
           }
