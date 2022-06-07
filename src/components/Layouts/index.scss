@@ -7,8 +7,15 @@
   .top-tags {
     bottom: auto;
     top: 35px;
+    
   }
   
+  .top-tag-html {
+    top: 38px;
+    margin-left:-20px;
+  }
+  
+
   .tags {
     color: #ffd700;
     opacity: 0.6;
@@ -79,7 +86,7 @@
           font-size: 18px;
           line-height: 18px;
           position: absolute;
-          left: -30px;
+          left: -10px;
           bottom: -20px;
           margin-left: 20px;
           opacity: 0.6;
@@ -102,6 +109,31 @@
         &:nth-of-type(3) {
           animation-delay: 1.3s;
         }
+
+        &:first-child:before{
+            content: '<p>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #ffd700;
+            font-size: 16px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 16px;
+          }
+    
+          &:last-child:after{ 
+            content: '</p>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #ffd700;
+            font-size: 16px;
+            line-height: 16px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;
+            margin-left: 20px;
+            opacity: 0.6;
+        }
       }
     }
   
@@ -114,4 +146,3 @@
   
 
 
-  
