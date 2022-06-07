@@ -28,7 +28,7 @@
       }
   
       &:after {
-        content: '<h1/>';
+        content: '</h1>';
         font-family: 'La Belle Aurore', cursive;
         color: #ffd700;
         font-size: 18px;
@@ -41,8 +41,10 @@
   
       img {
         margin-left: 20px;
+        margin-bottom:-16px;
+        margin-right:-16px;
         opacity: 0;
-        width: 32px;
+        width: 72px;
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
