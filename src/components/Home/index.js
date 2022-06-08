@@ -57,7 +57,7 @@ return (
       </div>
     </div>
 
-    <Loader type="pacman" />
+    <Loader type="ball-grid-pulse"/>
   </>
 )
 }
