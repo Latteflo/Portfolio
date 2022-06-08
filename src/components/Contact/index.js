@@ -49,7 +49,7 @@ const Contact = () => {
             <p>
 
             If you have other request or question,
-            don't hesitate to contact me using below form either.
+            don't hesitate to contact me!
           </p>
           <br/>
           <div className="contact-form">
