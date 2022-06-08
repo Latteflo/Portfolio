@@ -21,7 +21,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail-sf','template_282bi6c', form.current,'TLiQpez9SH3JdqU5d')
+        'gmail-sf','template_webpage', form.current,'TLiQpez9SH3JdqU5d')
       .then(
         () => {
           alert('Message successfully sent!')
@@ -47,10 +47,9 @@ const Contact = () => {
           <p>
             I am interested in new opportunities.</p>
             <p>
-
             If you have other request or question,
             don't hesitate to contact me!
-          </p>
+             </p>
           <br/>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>

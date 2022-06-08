@@ -122,7 +122,7 @@
             line-height: 16px;
           }
     
-          &:last-child:after{ 
+          &:last-of-type:after{ 
             content: '</p>';
             font-family: 'La Belle Aurore', cursive;
             color: #ffd700;
