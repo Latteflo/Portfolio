@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import LogoS from '../../assets/images/logo-s.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import LogoSub from '../../assets/images/logo-sub.png'
-import { faEnvelope, faHome , faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome , faUser,faEye} from '@fortawesome/free-solid-svg-icons';
 //import {  } from '@fortawesome/free-brands-svg-icons';
 import {
   faLinkedin,
@@ -26,10 +26,12 @@ const Sidebar = () => {
            <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
            <FontAwesomeIcon icon={faUser} color="#4d4d4e"/>
            </NavLink>
-           <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
-           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
+           <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio">
+           <FontAwesomeIcon icon={faEye} color="#4d4d4e"/>
            </NavLink>
-         </nav>
+              <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
+           </NavLink> </nav>
          <ul>
            <li>
              <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/florentina-simion-a97bba73/">
