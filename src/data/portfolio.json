@@ -1,7 +1,7 @@
 {
     "portfolio": [
         {
-          "cover":"/portfolio/src/data/weatherappreact.png",
+          "cover":"/portfolio/src/data/weather.png",
           "title":"Weather App",
           "description":"React/JavaScript/HTML/CSS",
           "url":"https://weather-sf.netlify.app/"
