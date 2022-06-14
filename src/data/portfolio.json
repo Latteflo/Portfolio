@@ -1,10 +1,10 @@
 {
-    "portfolio": [
-        {
-          "cover":"/portfolio/src/data/weather.png",
-          "title":"Weather App",
-          "description":"React/JavaScript/HTML/CSS",
-          "url":"https://weather-sf.netlify.app/"
-        }
-    ]
+  "portfolio": [
+    {
+      "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/263/original/Weather.jpg?1655243563",
+      "title": "Weather App",
+      "description": "React/JavaScript/HTML/CSS",
+      "url": "https://weather-sf.netlify.app/"
+    }
+  ]
 }
