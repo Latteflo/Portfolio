@@ -1,10 +1,28 @@
 {
   "portfolio": [
-    {
-      "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/263/original/Weather.jpg?1655243563",
+     {
+        "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/299/original/Dictionary.png?1655286192",
+        "title": "Dictionary",
+        "description": "React/JavaScript/HTML/CSS",
+        "url": "https://dictionary-project-flo.netlify.app/"
+      },
+      {
+      "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/302/original/Weather.png?1655286381",
       "title": "Weather App",
       "description": "React/JavaScript/HTML/CSS",
       "url": "https://weather-sf.netlify.app/"
-    }
-  ]
-}
+      },
+       { 
+        "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/297/original/Password_Generator.png?1655285634",
+        "title": "Interractive Password Generator",
+        "description": "JavaScript/HTML/CSS",
+        "url": "https://random-password-generator-fs.netlify.app/"
+      },
+      {
+        "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/298/original/Invoice.png?1655285922",
+        "title": "Invoice Generator",
+        "description": "JavaScript/HTML/CSS",
+        "url": "https://invoice-generator-fs.netlify.app/"
+      }
+    ]
+  }
