@@ -51,13 +51,16 @@ const Portfolio = () => {
     return (
         <>
             <div className="container portfolio-page">
+                <div className="text-zone">
                 <h1 className="page-title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={"Portfolio".split("")}
-                        idx={15}
-                    />
+                <AnimatedLetters
+                 letterClass={letterClass}
+                 strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
+                 idx={15}
+            />
                 </h1>
+                <br/>
+                </div>
                 <div>{renderPortfolio(portfolioData.portfolio)}</div>
             </div>
             <Loader type="ball-grid-pulse"/>
