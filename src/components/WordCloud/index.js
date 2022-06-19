@@ -6,7 +6,8 @@ const container = '.content';
 const texts = [
   'HTML', 'JavaScript',
   'CSS3', 'React', 
-  'GitHub', 'Bootstrap', 'Sass'
+  'GitHub', 'Bootstrap', 'Sass',
+  'Netlify'
 ];
 const options = {
   radius: 300,
