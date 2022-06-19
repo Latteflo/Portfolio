@@ -5,7 +5,7 @@ import TagCloud from 'TagCloud';
 const container = '.content';
 const texts = [
   'HTML', 'JavaScript',
-  'CSS3', 'React', 
+  'CSS3', 'React','Git', 
   'GitHub', 'Bootstrap', 'Sass',
   'Netlify'
 ];
