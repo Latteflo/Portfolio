@@ -23,7 +23,7 @@
     bottom: 0;
     left: 120px;
     font-size: 18px;
-    font-family: 'La Belle Aurore', cursive;
+    font-family: 'Cinzel';  
   }
   
   .bottom-tag-html {
@@ -59,7 +59,7 @@
   
       h1 {
         font-size: 53px;
-        font-family: 'Coolvetica';
+        font-family: 'Cinzel';
         color: #ffd700;
         font-weight: 400;
         margin-top: 0;
@@ -69,7 +69,7 @@
   
         &:before {
           content: '<h1>';
-          font-family: 'La Belle Aurore', cursive;
+          font-family: 'Cizel';
           color: #ffd700;
           font-size: 18px;
           position: absolute;
@@ -81,7 +81,7 @@
   
         &:after {
           content: '</h1>';
-          font-family: 'La Belle Aurore', cursive;
+          font-family: 'Cizel';
           color: #ffd700;
           font-size: 18px;
           line-height: 18px;
@@ -112,7 +112,7 @@
 
         &:first-of-type:before{
             content: '<p>';
-            font-family: 'La Belle Aurore', cursive;
+            font-family: 'Cizel';
             color: #ffd700;
             font-size: 16px;
             position: absolute;
@@ -124,7 +124,7 @@
     
           &:last-of-type:after{ 
             content: '</p>';
-            font-family: 'La Belle Aurore', cursive;
+            font-family: 'Cizel';
             color: #ffd700;
             font-size: 16px;
             line-height: 16px;
@@ -144,41 +144,3 @@
     }
   }
   
-
-  @media (max-width: 960px) {
-    .container.about .text-zone,
-    .container.skills .text-zone {
-      width: 80%;
-      min-height: 0;
-    }
-    #page {
-      height: auto;
-      position: relative;
-    }
-  
-    .container {
-      width: 100%;
-      height: auto;
-      padding-bottom: 58px;
-      box-sizing: border-box;
-      position: relative;
-      top: 0;
-      overflow: hidden;
-    }
-
-    .top-tags {
-      bottom: auto;
-      top: 76px;
-    }
-    .bottom-tags {
-      position: absolute;
-      clear: both;
-      float: left;
-      margin-top: 22px;
-      bottom: 0;
-    }
-    .tags {
-      margin-left: 10px;
-      left: 0;
-    }  
-  }

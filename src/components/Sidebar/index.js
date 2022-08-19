@@ -8,7 +8,8 @@ import { faEnvelope, faHome , faUser,faEye} from '@fortawesome/free-solid-svg-ic
 import {
   faLinkedin,
   faGithub,
-  faTwitter
+  faTwitter,
+  faCodepen
 } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -17,7 +18,7 @@ const Sidebar = () => {
     <div className='nav-bar'>
       <Link className='logo' to='/'>
          <img src={LogoS} alt="logo"/>
-         {/*<img src={LogoSub} className="sub-logo" alt="florentina"/>*/}
+         {/*<img src={LogoS} className="sub-logo" alt="florentina"/>*/}
        </Link>
        <nav>
          <NavLink exact="true" activeclassname="active" to="/">
@@ -33,6 +34,11 @@ const Sidebar = () => {
            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
            </NavLink> </nav>
          <ul>
+         <li>
+             <a target="_blank" rel='noreferrer' href="https://codepen.io/latteflo">
+               <FontAwesomeIcon icon={faCodepen} color="#4d4d4e"/>
+             </a>
+           </li>
            <li>
              <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/florentina-simion-a97bba73/">
                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>

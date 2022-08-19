@@ -17,10 +17,11 @@
             margin: 8px auto;
             width: 52px;
             height: auto;
-
-            & .sub-logo{
-                width:50px;
-            }
+        }
+        img:hover{
+            cursor: pointer;
+            overlay: 0.5;
+            color: #ffd700;
         }
     }
 
