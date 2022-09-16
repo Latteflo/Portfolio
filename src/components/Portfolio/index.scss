@@ -38,19 +38,24 @@
 
     .images-container {
         display: flex;
-        gap: 15px;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px;
         padding-bottom: 100px;
+        align-content: center;
+        align-items: center;
+        margin-top: 50px;
     }
 
     .image-box {
         position: relative;
-        flex: 1 1 20%;
-        height: 400px;
+        flex: 25% 2;
+        height: 550px;
         overflow: hidden;
         border-radius: 10px;
-        max-width: calc(25% - 10px);
-        ;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
 
         .portfolio-image {
             position: absolute;
@@ -137,4 +142,11 @@
         }
     }
 }
-
+@media (min-width: 768px) {
+    .portfolio-page {
+        padding-left: 150px;
+        padding-right: 150px;
+        width: calc(100% - 300px);
+    }
+    
+  }

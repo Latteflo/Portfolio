@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/logo-f.png'
+//import LogoTitle from '../../assets/images/logo-f.png'
 
 
 import './index.scss'
@@ -32,10 +32,10 @@ return (
           <span className={`${letterClass} _13`}>I</span>
           <span className={`${letterClass} _13`}>'</span>
           <span className={`${letterClass} _14`}>m</span>
-          <img
-            src={LogoTitle}
-            alt="JavaScript Developer Name, Web Developer Name"
-          />
+         
+          <span className={`${letterClass} _14`}></span>
+          <span className={`${letterClass} _14 special`}>F</span>
+
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
@@ -63,7 +63,7 @@ return (
       </div>
     </div>
 
-    <Loader type="ball-grid-pulse"/>
+    <Loader type="packman"/>
   </>
 )
 }
