@@ -17,9 +17,11 @@ const About = () => {
       <>
         <div className="container about-page">
             <div className="text-zone">
-                <h1><AnimatedLetters
+                <h1>
+                <span className={`${letterClass} _14 special`}>A</span>
+                  <AnimatedLetters
                 letterClass={letterClass}
-                    strArray={['A','b','o','u','t', ' ','m','e']}
+                    strArray={['b','o','u','t', ' ','m','e']}
                     idx={15}/>
                     </h1>
            <br/>

@@ -56,13 +56,13 @@ const Portfolio = () => {
             <div className="container portfolio-page">
                 <div className="text-zone">
                 <h1 className="page-title">
+                <span className={`${letterClass} _14 special`}>P</span>
                 <AnimatedLetters
                  letterClass={letterClass}
-                 strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
+                 strArray={['o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
                  idx={15}
             />
                 </h1>
-                <br/>
                 </div>
                 <div>{renderPortfolio(portfolioData.portfolio)}</div>
             </div>
