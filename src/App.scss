@@ -46,41 +46,7 @@ textarea {
   animation-fill-mode: forwards;
 }
 
-
-@media (max-width: 960px) {
-  .container.about .text-zone,
-  .container.skills .text-zone {
-    width: 80%;
-    min-height: 0;
-  }
-  #page {
-    height: auto;
-    position: relative;
-  }
-
-  .container {
-    width: 100%;
-    height: auto;
-    padding-bottom: 58px;
-    box-sizing: border-box;
-    position: relative;
-    top: 0;
-    overflow: hidden;
-  }
-
-  .top-tags {
-    bottom: auto;
-    top: 76px;
-  }
-  .bottom-tags {
-    position: absolute;
-    clear: both;
-    float: left;
-    margin-top: 22px;
-    bottom: 0;
-  }
-  .tags {
-    margin-left: 10px;
-    left: 0;
-  }  
+canvas{
+  width: 100vw;
+  height: 100vh;
 }

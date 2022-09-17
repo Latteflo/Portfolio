@@ -2,11 +2,13 @@ import { Outlet } from 'react-router-dom'
 import Sidebar from '../Sidebar/'
 import './index.scss'
 
+
 const Layout =()=>{
     return (
     <div className='page'>
         <Sidebar/>
         <Outlet/>
+     
         {/*<div className='page'>
         <span className="top-tag-html">
             &lt;html&gt;</span>

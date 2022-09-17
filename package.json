@@ -27,6 +27,7 @@
     "react-tsparticles": "^2.1.0",
     "TagCloud": "^2.2.0",
     "three": "^0.142.0",
+    "threejs-toys": "^0.0.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
