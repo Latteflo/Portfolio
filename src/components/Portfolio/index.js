@@ -34,6 +34,7 @@ const Portfolio = () => {
                              
                                 <div className="content">
                                     <p className="title"> {port.title} </p>  
+                                    <p className="technologies">Build with: {port.technologies} </p>
                                      <br/>
                                     <h4 className="description"> {port.description} </h4>
                                     <br/>
@@ -66,7 +67,7 @@ const Portfolio = () => {
                 </div>
                 <div>{renderPortfolio(portfolioData.portfolio)}</div>
             </div>
-            <Loader type="ball-grid-pulse"/>
+            <Loader type="semi-circle-spin"/>
         </>
     );
 }

@@ -22,6 +22,7 @@ useEffect(() => {
 
 return (
   <>
+  
     <div className="container home-page">
       <div className="text-zone">
         <h1>
@@ -33,19 +34,19 @@ return (
           <span className={`${letterClass} _13`}>'</span>
           <span className={`${letterClass} _14`}>m</span>
          
-          <span className={`${letterClass} _14`}></span>
-          <span className={`${letterClass} _14 special`}>F</span>
+          <span className={`${letterClass} _15`}></span>
+          <span className={`${letterClass} _16 special`}>F</span>
 
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
-            idx={15}
+            idx={16}
           />   
 
           <AnimatedLetters
             letterClass={letterClass}
             strArray={surnameArray}
-            idx={15}
+            idx={1}
           />
           <br />
           <AnimatedLetters
@@ -59,11 +60,9 @@ return (
           CONTACT ME
         </Link>
       </div>
-      <div className="three-container">
-      </div>
     </div>
 
-    <Loader type="packman"/>
+    <Loader type="semi-circle-spin"/>
   </>
 )
 }

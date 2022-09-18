@@ -1,7 +1,7 @@
 $primary-color : #ffd700;
 
 @import 'animate.css';
-@import '~loaders.css/src/animations/pacman.scss';
+@import '~loaders.css/src/animations/semi-circle-spin.scss';
 
 @font-face {
     font-family: 'Helvetica Neue';
@@ -35,6 +35,7 @@ textarea {
 .loader-active {
   display: block;
   position: absolute;
+  color: #fff;
   left: 0;
   right: 0;
   margin: auto;
@@ -49,4 +50,5 @@ textarea {
 canvas{
   width: 100vw;
   height: 100vh;
+  z-index: 2;
 }

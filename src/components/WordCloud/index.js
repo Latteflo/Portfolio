@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import TagCloud from 'TagCloud';
+import './index.scss';
 
 const container = '.content';
-const texts = [
+const text = [
   'HTML', 'JavaScript',
   'CSS3','Tailwind CSS','React','Git', 
   'GitHub', 'Bootstrap', 'Sass',
@@ -18,11 +19,11 @@ const options = {
 
 const WordCloud = () => {
   useEffect(() => {
-    TagCloud(container, texts, options);
+    TagCloud(container, text, options);
   })
 
   return (
-      <span className="content" style={{color:"#ffd700"}}>
+      <span className="content">
     </span>
   )
 }

@@ -1,6 +1,6 @@
 .home-page {
     .text-zone {
-      position: absolute;
+      position: relative;
       left: 10%;
       top: 50%;
       transform: translateY(-50%);
@@ -21,6 +21,7 @@
       margin: 0;
       font-family: 'laBelleAurore';
       font-weight: 400;
+  
     }
   
     h2 {
@@ -55,7 +56,8 @@
           color: #181818;
           text-decoration: none;
           transition: all 250ms linear;
-        }      
+        }
+      
     }
   }
   

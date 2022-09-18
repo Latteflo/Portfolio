@@ -25,7 +25,6 @@ const About = () => {
                     idx={15}/>
                     </h1>
            <br/>
-
         <p> I am an ambitious front end developer based in Belgium, currently looking for a role in an IT company with the opportunity to work with the latest technologies on diverse projects. </p>
         <p>I'm quietly confident, naturally curious and perpetually working on improving my skills.</p>
         <p>I'm a fast learner and I'm always looking for new challenges and opportunities to grow as a developer.</p>
@@ -34,7 +33,7 @@ const About = () => {
         <WordCloud/>
           </div>
     </div>  
-    <Loader type="ball-grid-pulse" />
+    <Loader type="semi-circle-spin" />
     </>
     )
 }
