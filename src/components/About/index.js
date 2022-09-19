@@ -3,6 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import WordCloud from '../WordCloud'
+//import BustImg from '../../assets/images/bust.svg'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -16,6 +17,7 @@ const About = () => {
     return(
       <>
         <div className="container about-page">
+          <div className="img"></div>
             <div className="text-zone">
                 <h1>
                 <span className={`${letterClass} _14 special`}>A</span>
@@ -29,11 +31,13 @@ const About = () => {
         <p>I'm quietly confident, naturally curious and perpetually working on improving my skills.</p>
         <p>I'm a fast learner and I'm always looking for new challenges and opportunities to grow as a developer.</p>
         </div>
-        <div className="sphere">
         <WordCloud/>
-          </div>
     </div>  
-    <Loader type="semi-circle-spin" />
+    {/*<div className='image-container'>
+      <img src={BustImg} alt="female bust smiling"/>
+    </div>*/}
+
+    <Loader type="ball-triangle-path" />
     </>
     )
 }

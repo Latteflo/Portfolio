@@ -62,7 +62,7 @@ return (
       </div>
     </div>
 
-    <Loader type="semi-circle-spin"/>
+    <Loader type="ball-triangle-path" />
   </>
 )
 }

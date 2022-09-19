@@ -40,9 +40,9 @@ const pc = particlesCursor({
 
 document.body.addEventListener("click", () => {
   pc.uniforms.uColor.value.set(Math.random() * 0xf1f1f5);
-//  pc.uniforms.uCoordScale.value = 0.006 + Math.random() * 2;
-//  pc.uniforms.uNoiseIntensity.value = 0.0001 + Math.random() * 0.001;
-//  pc.uniforms.uPointSize.value = 1 + Math.random() * 10;
+  pc.uniforms.uCoordScale.value = 0.006 + Math.random() * 2;
+  pc.uniforms.uNoiseIntensity.value = 0.0001 + Math.random() * 0.001;
+  pc.uniforms.uPointSize.value = 1 + Math.random() * 10;
 });
 
 function App() {

@@ -35,8 +35,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container contact-page">
-        <div className="text-zone">
+      <div className="contact-page">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -44,7 +43,9 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>
+          <div className="page-fill">
+          <div className="text-zone">
+                  <p>
             I am interested in new opportunities.</p>
             <p>
             If you have other request or question,
@@ -87,16 +88,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="info-map">
-          FS
-          <br />
-          Belgium,
-          <br />
-          Brussels
-            <br />
-          <span>sf.simion.f@gmail.com</span>
-        </div>
-        <div className="map-o"></div>
         <div className="map-wrap">
           <MapContainer center={[50.8466,4.3528]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
@@ -104,9 +95,10 @@ const Contact = () => {
               <Popup> Hi! </Popup>
             </Marker>
           </MapContainer>
-  </div>
       </div>
-      <Loader type="semi-circle-spin" />
+      </div>
+      </div>
+      <Loader type="ball-triangle-path"  />
     </>
   )
 }

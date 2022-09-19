@@ -1,22 +1,30 @@
-.sphere {
-  width: 50%;
-  height: 100%;
-  top: 0;
-  padding-top: 2%;
-  margin-left: 0;
-  position: absolute;
-  right: 0;
-  overflow: hidden;
-}
 
+.about-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;   
+  
+  .img{
+     background-image: url(../../assets/images/bust.png);
+     background-size: 50%;
+     background-repeat: no-repeat;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: -3%;
+     left: 42%;
+     z-index: -1;
+     opacity: 0.5;
+  }
 
-.container.about-page {
+  
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
     transform: translateY(-50%);
-    width: 35%;
+    width: 50%;
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
@@ -55,4 +63,3 @@
     }
   }
 }
-

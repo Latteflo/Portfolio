@@ -10,9 +10,9 @@ const text = [
   'Netlify'
 ];
 const options = {
-  radius: 300,
-  maxSpeed: 'fast',
-  initSpeed: 'fast',
+  radius: 150,
+  maxSpeed: 'normal',
+  initSpeed: 'normal',
   direction: 135,
   keep: true
 };
@@ -23,8 +23,7 @@ const WordCloud = () => {
   })
 
   return (
-      <span className="content">
-    </span>
+      <div className="content"></div>
   )
 }
 

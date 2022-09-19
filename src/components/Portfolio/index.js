@@ -67,7 +67,7 @@ const Portfolio = () => {
                 </div>
                 <div>{renderPortfolio(portfolioData.portfolio)}</div>
             </div>
-            <Loader type="semi-circle-spin"/>
+            <Loader type="ball-triangle-path" />
         </>
     );
 }
