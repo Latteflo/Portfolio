@@ -36,6 +36,7 @@ const Contact = () => {
   return (
     <>
       <div className="contact-page">
+      <div className="img"></div>
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -43,7 +44,7 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <div className="text-zone">
+        <div className="text-zone">
                   <p>
             I am interested in new opportunities.</p>
             <p>
