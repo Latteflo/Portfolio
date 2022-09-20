@@ -1,5 +1,7 @@
 import './App.scss';
 import {Routes, Route } from "react-router-dom";
+import React from 'react';
+//import { Link } from 'react-router-dom';
 import Layout from './/components/Layouts';
 import Home from './components/Home';
 import About from './components/About';
