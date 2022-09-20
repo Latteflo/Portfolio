@@ -43,7 +43,6 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <div className="page-fill">
           <div className="text-zone">
                   <p>
             I am interested in new opportunities.</p>
@@ -95,7 +94,6 @@ const Contact = () => {
               <Popup> Hi! </Popup>
             </Marker>
           </MapContainer>
-      </div>
       </div>
       </div>
       <Loader type="ball-triangle-path"  />
