@@ -36,7 +36,6 @@ const Contact = () => {
   return (
     <>
       <div className="contact-page">
-      {/*<div className="img"></div>*/}
           <h1>
           <span className={`${letterClass} _14 special`}>C</span>
             <AnimatedLetters
@@ -46,12 +45,9 @@ const Contact = () => {
             />
           </h1>
         <div className="text-zone">
-                  <p>
-            I am interested in new opportunities.</p>
-            <p>
-            If you have other request or question,
-            don't hesitate to contact me!
-             </p>
+           <p>I am interested in new opportunities.</p>
+           <p>If you have other request or question,
+            don't hesitate to contact me!</p>
           <br/>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
