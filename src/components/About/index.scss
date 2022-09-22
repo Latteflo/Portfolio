@@ -21,6 +21,9 @@
      opacity: 0.5;
   }
 
+  .special{
+    color: #ffd700;
+  }
   
   .text-zone {
     transform: translateY(-50%);
@@ -28,11 +31,11 @@
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
-
+    
     h1 {
       font-size: 53px;
       font-family: 'Cinzel';
-      color: #ffd700;
+      color: #fff;
       font-weight: 400;
       margin-top: 0;
       margin-bottom: 0;
