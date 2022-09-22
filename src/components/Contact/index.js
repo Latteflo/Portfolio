@@ -36,11 +36,12 @@ const Contact = () => {
   return (
     <>
       <div className="contact-page">
-      <div className="img"></div>
+      {/*<div className="img"></div>*/}
           <h1>
+          <span className={`${letterClass} _14 special`}>C</span>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={[ 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
               idx={15}
             />
           </h1>
