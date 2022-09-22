@@ -1,7 +1,6 @@
+import React from 'react';
 import './App.scss';
 import {Routes, Route } from "react-router-dom";
-import React from 'react';
-//import { Link } from 'react-router-dom';
 import Layout from './/components/Layouts';
 import Home from './components/Home';
 import About from './components/About';
@@ -10,7 +9,7 @@ import Portfolio from './components/Portfolio';
 import {particlesCursor } from 'threejs-toys';
 
 const pc = particlesCursor({
-  canvas: document.querySelector("canvas"),
+  canvas: document.getElementById("webgl"),
   gpgpuSize: 512,
   colors: [0x00ff00, 0x0000ff],
   color: 0xff0000,
@@ -36,8 +35,6 @@ const pc = particlesCursor({
   sleepTimeCoefNoise5: 0.0001,
   sleepTimeCoefNoise6: 0.0001,
   sleepTimeCoefNoise7: 0.0001,
-
-
 });
 
 document.body.addEventListener("click", () => {
@@ -56,6 +53,7 @@ function App() {
       <Route path="about" element={< About />} />     
       <Route path="portfolio" element={< Portfolio />} />
       <Route path="contact" element={< Contact />} />
+      <Route path="*" element={<p>Oops, Page doesn't exists! Nothing Here</p>} />
       </Route>
       </Routes>
       </>
