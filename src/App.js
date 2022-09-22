@@ -1,5 +1,5 @@
-import React from 'react';
 import './App.scss';
+import React from 'react';
 import {Routes, Route } from "react-router-dom";
 import Layout from './/components/Layouts';
 import Home from './components/Home';
@@ -9,7 +9,7 @@ import Portfolio from './components/Portfolio';
 import {particlesCursor } from 'threejs-toys';
 
 const pc = particlesCursor({
-  canvas: document.getElementById("webgl"),
+  canvas: document.querySelector("canvas"),
   gpgpuSize: 512,
   colors: [0x00ff00, 0x0000ff],
   color: 0xff0000,
