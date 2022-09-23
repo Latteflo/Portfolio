@@ -1,39 +1,39 @@
 {
   "portfolio": [
     {
-      "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/535/original/HomeLand.png?1656173888",
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/535/original/HomeLand.png?1656173888",
       "title": "HomeLand",
       "technologies": "React,JavaScript,HTML.Tailwind CSS",
       "description": "A website for a real estate company. It is a single page application with a responsive design. It is built with React and Tailwind CSS.",
       "url": "https://homeland-real-estate.netlify.app/"
     },
     {
-        "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/299/original/Dictionary.png?1655286192",
-        "title": "Dictionary",
-        "technologies": "React,JavaScript,HTML,CSS",
-        "description": "A dictionary app that allows you to search for words and see their definitions. It is built with React and the Merriam-Webster dictionary API and Pexels Api .",
-        "url": "https://dictionary-project-flo.netlify.app/"
-      },
-      {
-      "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/302/original/Weather.png?1655286381",
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/299/original/Dictionary.png?1655286192",
+      "title": "Dictionary",
+      "technologies": "React,JavaScript,HTML,CSS",
+      "description": "A dictionary app that allows you to search for words and see their definitions. It is built with React and the Merriam-Webster dictionary API and Pexels Api .",
+      "url": "https://dictionary-project-flo.netlify.app/"
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/302/original/Weather.png?1655286381",
       "title": "Weather App",
       "technologies": "React,JavaScript,HTML,CSS",
       "description": "A weather app that allows you to search for a city and see the current weather and the forecast for the next 5 days. It is built with React and the OpenWeather API.",
       "url": "https://weather-sf.netlify.app/"
-      },
-       { 
-        "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/297/original/Password_Generator.png?1655285634",
-        "title": "Interractive Password Generator",
-        "technologies": "JavaScript,HTML,CSS",
-        "description": "A password generator that allows you to choose the length of the password and the type of characters you want to include. It is built with JavaScript.",
-        "url": "https://random-password-generator-fs.netlify.app/"
-      },
-      {
-        "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/298/original/Invoice.png?1655285922",
-        "title": "Invoice Generator",
-        "technologies": "JavaScript,HTML,CSS",
-        "description": "An invoice generator that allows you to create an invoice with your company details and the details of the client. It is built with JavaScript.",
-        "url": "https://invoice-generator-fs.netlify.app/"
-      }
-    ]
-  }
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/297/original/Password_Generator.png?1655285634",
+      "title": "Interractive Password Generator",
+      "technologies": "JavaScript,HTML,CSS",
+      "description": "A password generator that allows you to choose the length of the password and the type of characters you want to include. It is built with JavaScript.",
+      "url": "https://random-password-generator-fs.netlify.app/"
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/298/original/Invoice.png?1655285922",
+      "title": "Invoice Generator",
+      "technologies": "JavaScript,HTML,CSS",
+      "description": "An invoice generator that allows you to create an invoice with your company details and the details of the client. It is built with JavaScript.",
+      "url": "https://invoice-generator-fs.netlify.app/"
+    }
+  ]
+}

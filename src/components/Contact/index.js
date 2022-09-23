@@ -11,17 +11,21 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-      setTimeout(() => {
-        setLetterClass('text-animate-hover')
-      }, 3000);
-    }, []);
+    setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 3000)
+  }, [])
 
   const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
       .sendForm(
-        'gmail-sf','template_webpage', form.current,'TLiQpez9SH3JdqU5d')
+        'gmail-sf',
+        'template_webpage',
+        form.current,
+        'TLiQpez9SH3JdqU5d'
+      )
       .then(
         () => {
           alert('Message successfully sent!')
@@ -36,19 +40,20 @@ const Contact = () => {
   return (
     <>
       <div className="contact-page">
-          <h1>
+        <h1>
           <span className={`${letterClass} _14 special`}>C</span>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={[ 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
-          </h1>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={['o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+            idx={15}
+          />
+        </h1>
         <div className="text-zone">
-           <p>I am interested in new opportunities.</p>
-           <p>If you have other request or question,
-            don't hesitate to contact me!</p>
-          <br/>
+          <p>I am interested in new opportunities.</p>
+          <p>
+            If you have other request or question, don't hesitate to contact me!
+          </p>
+          <br />
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -86,15 +91,15 @@ const Contact = () => {
           </div>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[50.8466,4.3528]} zoom={13}>
+          <MapContainer center={[50.8466, 4.3528]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[50.8466,4.3528]}>
+            <Marker position={[50.8466, 4.3528]}>
               <Popup> Hi! </Popup>
             </Marker>
           </MapContainer>
+        </div>
       </div>
-      </div>
-      <Loader type="ball-triangle-path"  />
+      <Loader type="ball-triangle-path" />
     </>
   )
 }
