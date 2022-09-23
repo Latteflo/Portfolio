@@ -15,13 +15,25 @@ import {
   faCodepen,
 } from '@fortawesome/free-brands-svg-icons'
 
+ function toggleMobile(e) {
+  e.preventDefault();
+  document.getElementsByClassName("mobile").click(function () {
+    document.getElementsByClassName("nav-bar nav").toggleClass("show");
+    return false;
+  });
+}
+
+
 const Sidebar = () => {
   return (
     <div className="nav-bar">
+      <div className="mobile" onClick={toggleMobile}>
+        <i className="fa fa-bars"></i>
+      </div>
       <Link className="logo" to="/">
         <img src={LogoS} alt="logo" />
       </Link>
-      <nav>
+      <nav className='nav-content'>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>

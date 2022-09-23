@@ -58,3 +58,23 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .home-page {
+    .text-zone {
+      left: 15%;
+      transform: translateY(-60%);
+    }
+
+    .special {
+      font-size: 7rem;
+    }
+
+    h1 {
+      font-size: 6rem;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+}

@@ -10,3 +10,13 @@
   font-weight: 800;
   overflow: hidden;
 }
+
+
+@media (max-width: 960px) {
+  .content {
+    left: 0;
+  }     
+}
+
+@media (max-width: 530px) {
+}
