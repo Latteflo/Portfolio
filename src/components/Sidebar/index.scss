@@ -1,11 +1,18 @@
+$small: 375px;
+
 .nav-bar{
     background-color: #181818;
-    width: 60px;
-    height: 100%;
+    width: 5rem;
+    height: 100vh;
     position: absolute;
     top: 0;
     z-index: 3;
-    min-height: 500px;
+
+
+    @media screen and (max-width: $small) {
+        width: 100%;
+   
+      }
 
     .logo{
         display: block;
