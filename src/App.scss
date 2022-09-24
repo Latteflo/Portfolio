@@ -1,27 +1,26 @@
-$primary-color : #ffd700;
+$primary-color: #ffd700;
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/semi-circle-spin.scss';
 
 @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('/assets/fonts/helvetica-neu.ttf') format (ttf);
+  font-family: 'Helvetica Neue';
+  src: url('/assets/fonts/helvetica-neu.ttf') format (ttf);
 }
 @font-face {
-    font-family: 'Cinzel', serif;
-    src: url('/assets/fonts/Cinzel-VariableFont_wght.ttf') format (ttf);
+  font-family: 'Cinzel', serif;
+  src: url('/assets/fonts/Cinzel-VariableFont_wght.ttf') format (ttf);
 }
 
 @font-face {
-    font-family: 'La Belle Aurore';
-    src: url('/assets/fonts/LaBelleAurore.woff2') format (woff2);
+  font-family: 'La Belle Aurore';
+  src: url('/assets/fonts/LaBelleAurore.woff2') format (woff2);
 }
 
 @font-face {
-    font-family: 'Coolvetica';
-    src: url('/assets/fonts/CoolveticaRg-Regular.woff2') format (woff2);
+  font-family: 'Coolvetica';
+  src: url('/assets/fonts/CoolveticaRg-Regular.woff2') format (woff2);
 }
-
 
 input,
 textarea {
@@ -47,7 +46,7 @@ textarea {
   animation-fill-mode: forwards;
 }
 
-canvas{
+canvas {
   display: block;
   position: relative;
   z-index: -2;
