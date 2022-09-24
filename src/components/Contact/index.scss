@@ -162,9 +162,14 @@
   }
 }
 
-
-
 @media (max-width: 960px) {
+  .contact-page {
+    margin-top: 6rem;
+    h1{
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 @media (max-width: 530px) {
