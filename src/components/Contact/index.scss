@@ -24,7 +24,7 @@
   }
 
   .text-zone {
-    flex: 0 0 50%;
+    flex: 1 0 50%;
     margin: 4rem;
     width: 100%;
     display: flex;
@@ -165,7 +165,7 @@
 @media (max-width: 960px) {
   .contact-page {
     margin-top: 6rem;
-    h1{
+    h1 {
       margin: 0;
       padding: 0;
     }
@@ -173,4 +173,13 @@
 }
 
 @media (max-width: 530px) {
+  .contact-page {
+    .text-zone {
+      flex: 1 0 50%;
+      margin: 0;
+    }
+    .map-wrap {
+      display: none;
+    }
+  }
 }

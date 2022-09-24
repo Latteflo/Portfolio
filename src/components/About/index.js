@@ -3,6 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import WordCloud from '../WordCloud'
+import Skills from '../Skills'
 //import BustImg from '../../assets/images/bust.svg'
 
 const About = () => {
@@ -49,6 +50,7 @@ const About = () => {
             opportunities to grow as a developer.
           </p>
         </div>
+        <Skills/>
         <WordCloud />
       </div>
       <Loader type="ball-triangle-path" />

@@ -70,16 +70,33 @@
     .about-page {
       .img {
         transform: scale(0.5);
+        top: -15%;
       }
       .text-zone {
         margin-left: 3rem;
-        transform: translateY(-7%);
+        transform: translateY(-5%);
         h1 {
           font-size: 5rem;
-          transform: translateY(-10%);
         }
       }
     }
   }
 @media (max-width: 530px) {
+  .about-page {
+    flex-wrap: wrap;
+    .text-zone {
+      margin-left: 3rem;
+      margin-bottom: -50%;
+      margin-right: 3rem;
+      transform: translateY(-5%);
+      width: 90%;
+      .img{
+        left: 164px;
+        top: -107px;
+      }
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
 }

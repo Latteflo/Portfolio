@@ -2,7 +2,7 @@
   .text-zone {
     position: relative;
     left: 10%;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     width: 100%;
     max-height: 100%;
@@ -73,8 +73,30 @@
     h1 {
       font-size: 5rem;
     }
+    .flat-button {
+      color: #ffd700;
+    
+  
+      &:hover {
+        color: ffd700;
+      }
+    }
   }
 }
 
 @media (max-width: 530px) {
+  .home-page {
+    .text-zone {
+      left: 2rem;
+      transform: translateY(-85%);
+    }
+
+    .special {
+      font-size: 4rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
 }

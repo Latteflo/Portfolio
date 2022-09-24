@@ -9,7 +9,6 @@ const text = [
   'CSS3',
   'Tailwind CSS',
   'React',
-  'Git',
   'GitHub',
   'Bootstrap',
   'Sass',
