@@ -1,13 +1,6 @@
 {
   "portfolio": [
     {
-      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/535/original/HomeLand.png?1656173888",
-      "title": "HomeLand",
-      "technologies": "React,JavaScript,HTML.Tailwind CSS",
-      "description": "A website for a real estate company. It is a single page application with a responsive design. It is built with React and Tailwind CSS.",
-      "url": "https://homeland-real-estate.netlify.app/"
-    },
-    {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/299/original/Dictionary.png?1655286192",
       "title": "Dictionary",
       "technologies": "React,JavaScript,HTML,CSS",
