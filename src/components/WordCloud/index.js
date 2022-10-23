@@ -7,7 +7,6 @@ const text = [
   'HTML',
   'JavaScript',
   'CSS3',
-  'Tailwind CSS',
   'React',
   'GitHub',
   'Bootstrap',
