@@ -3,7 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import WordCloud from '../WordCloud'
-import Skills from '../Skills'
+//import Skills from '../Skills'
 //import BustImg from '../../assets/images/bust.svg'
 
 const About = () => {
@@ -18,7 +18,8 @@ const About = () => {
   return (
     <>
       <div className="container about-page">
-        <div className="img"></div>
+         <div className="img"></div>
+         <div className="text-flex-about">
         <div className="text-zone">
           <h1>
             <span className={`${letterClass} _14 special`}>A</span>
@@ -50,8 +51,9 @@ const About = () => {
             opportunities to grow as a developer.
           </p>
         </div>
-        <Skills/>
+        {/*<Skills/>*/}
         <WordCloud />
+        </div>
       </div>
       <Loader type="ball-triangle-path" />
     </>

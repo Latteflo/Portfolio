@@ -1,8 +1,9 @@
 .container {
   width: 100vw;
+  max-width: 100%;
   will-change: contents;
   height: 100vh;
-  min-height: 566px;
+  min-height: 155%;
   position: absolute;
   opacity: 0;
   top: 5%;

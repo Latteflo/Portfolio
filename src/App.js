@@ -44,6 +44,41 @@ document.body.addEventListener('click', () => {
   pc.uniforms.uPointSize.value = 1 + Math.random() * 10
 })
 
+const canvas = document.querySelector('canvas')
+
+//function to get mouse position and pass it to the particlesCursor
+function getMousePos(canvas, evt) {
+  let rect = canvas.getBoundingClientRect();
+  return {
+    x: evt.clientX - rect.left,
+    y: evt.clientY - rect.top
+  };
+}
+
+//function to get touch position and pass it to the particlesCursor
+function getTouchPos(canvas, evt) {
+  let rect = canvas.getBoundingClientRect();
+  return {
+    x: evt.touches[0].clientX - rect.left,
+    y: evt.touches[0].clientY - rect.top
+  };
+}
+
+//connect mouse position to the particlesCursor
+document.addEventListener('mousemove', function (evt) {
+  let mousePos = getMousePos(canvas, evt);
+  pc.uniforms.uMouse.value.x = mousePos.x
+  pc.uniforms.uMouse.value.y = mousePos.y
+}, false);
+
+//connect touch position to the particlesCursor
+document.addEventListener('touchmove', function (evt) {
+  let touchPos = getTouchPos(canvas, evt);
+  pc.uniforms.uMouse.value.x = touchPos.x
+  pc.uniforms.uMouse.value.y = touchPos.y
+}, false);
+
+
 function App() {
   return (
     <>
@@ -54,7 +89,7 @@ function App() {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="contact" element={<Contact />} />
           <Route
-            path="*"
+            path=""
             element={<p>Oops, Page doesn't exists! Nothing Here</p>}
           />
         </Route>
