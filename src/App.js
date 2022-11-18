@@ -46,7 +46,7 @@ document.body.addEventListener('click', () => {
 
 const canvas = document.querySelector('canvas')
 
-//function to get mouse position and pass it to the particlesCursor
+//function to get mouse position and pass it to the particlesCursor 
 function getMousePos(canvas, evt) {
   let rect = canvas.getBoundingClientRect();
   return {

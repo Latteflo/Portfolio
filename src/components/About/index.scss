@@ -1,21 +1,20 @@
 .about-page {
-  width: 100%;
-  max-width: 1245px;
-  margin: 0;
+  width: 100vw;
+  margin: 0 auto;
+  padding:2rem;
   background-color: #000000;
-  overflow: hidden;
 
 
   .img {
     background-image: url(../../assets/images/bust.png);
-    background-size: 50%;
+    background-size: 35%;
     background-repeat: no-repeat;
     position: absolute;
-    width: 900px;
-    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
     height: 100%;
-    right: -25%;
-    z-index: -2;
+    left: 60%;
+    z-index: 0;
     opacity: 0.5;
   }
 
@@ -31,8 +30,8 @@
   }
 
   .text-zone {
-    width:900px;
-    max-width:90%;
+    margin-left: -20rem;
+    width:60%;
 
     h1 {
       font-size: 8rem;
@@ -79,7 +78,7 @@
         }
         .img {
           transform: scale(0.5);
-          top: -15%;
+          top: -16%;
         }
       }
     }

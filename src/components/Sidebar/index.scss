@@ -2,6 +2,7 @@
   background-color: #181818;
   width: 8rem;
   height: 100vh;
+  position: fixed;
   position: absolute;
   top: 0;
   z-index: 3;
@@ -145,9 +146,9 @@
       display: flex;
       height: 0;
       top: 0;
-      margin-top: 17px;
-      width: 90%;
+      margin-top: 17px; 
       margin-left: 10%;
+      width: 100%;
       flex-direction: row;
       align-content: flex-end;
       justify-content: space-evenly;

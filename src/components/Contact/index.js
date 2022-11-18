@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
@@ -40,7 +39,7 @@ const Contact = () => {
   return (
     <>
       <div className="contact-page">
-        <h1>
+           <h1>
           <span className={`${letterClass} _14 special`}>C</span>
           <AnimatedLetters
             letterClass={letterClass}
@@ -99,7 +98,6 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
-      <Loader type="ball-triangle-path" />
     </>
   )
 }

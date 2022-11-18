@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import portfolioData from '../../data/portfolio.json'
@@ -49,7 +48,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className="container portfolio-page">
+      <div className="portfolio-page">
         <div className="text-zone">
           <h1 className="page-title">
             <span className={`${letterClass} _14 special`}>P</span>
@@ -60,9 +59,10 @@ const Portfolio = () => {
             />
           </h1>
         </div>
-        <div>{renderPortfolio(portfolioData.portfolio)}</div>
+        <div className="portfolio-data">
+          {renderPortfolio(portfolioData.portfolio)}
+          </div>
       </div>
-      <Loader type="ball-triangle-path" />
     </>
   )
 }

@@ -1,7 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
 import WordCloud from '../WordCloud'
 //import Skills from '../Skills'
 //import BustImg from '../../assets/images/bust.svg'
@@ -17,7 +16,7 @@ const About = () => {
 
   return (
     <>
-      <div className="container about-page">
+      <div className="about-page">
          <div className="img"></div>
          <div className="text-flex-about">
         <div className="text-zone">
@@ -55,7 +54,6 @@ const About = () => {
         <WordCloud />
         </div>
       </div>
-      <Loader type="ball-triangle-path" />
     </>
   )
 }
