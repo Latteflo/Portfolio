@@ -15,17 +15,18 @@
       "url": "https://weather-sf.netlify.app/"
     },
     {
-    "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/297/original/Password_Generator.png?1655285634",
-    "title": "Interractive Password Generator",
-    "technologies": "JavaScript,HTML,CSS",
-    "description": "A password generator that allows you to choose the length of the password and the type of characters you want to include. It is built with JavaScript.",
-    "url": "https://random-password-generator-fs.netlify.app/"
-      },{
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/297/original/Password_Generator.png?1655285634",
+      "title": "Interractive Password Generator",
+      "technologies": "JavaScript,HTML,CSS",
+      "description": "A password generator that allows you to choose the length of the password and the type of characters you want to include. It is built with JavaScript.",
+      "url": "https://random-password-generator-fs.netlify.app/"
+    },
+    {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/298/original/Invoice.png?1655285922",
-       "title": "Invoice Generator",
-       "technologies": "JavaScript,HTML,CSS",
+      "title": "Invoice Generator",
+      "technologies": "JavaScript,HTML,CSS",
       "description": "An invoice generator that allows you to create an invoice with your company details and the details of the client. It is built with JavaScript.",
-       "url": "https://invoice-generator-fs.netlify.app/"
-      }
+      "url": "https://invoice-generator-fs.netlify.app/"
+    }
   ]
 }

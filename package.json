@@ -31,6 +31,7 @@
     "request-promise-native": "^1.0.9",
     "source-map-resolve": "^0.6.0",
     "svgo": "^2.8.0",
+    "swiper": "^8.4.5",
     "TagCloud": "^2.2.0",
     "three": "^0.142.0",
     "threejs-toys": "^0.0.8",
