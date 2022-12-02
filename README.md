@@ -10,3 +10,6 @@ Lastly, I used emailjs to set up contact forms on my website so that potential e
 ![Screenshot 2022-12-02 135921](https://user-images.githubusercontent.com/92720989/205298845-30524550-7de8-4861-929b-a1419d8e2e01.png)
 ![Screenshot 2022-12-02 135953](https://user-images.githubusercontent.com/92720989/205299855-1ca041a3-7895-4486-81c8-cb8ef2eb395a.png)
 ![Screenshot 2022-12-02 140007](https://user-images.githubusercontent.com/92720989/205299278-7c59bfe1-ad38-4df9-806d-58cae87dcc94.png)
+
+
+Live: https://florentina-simion-portfolio.netlify.app/#/
