@@ -26,8 +26,8 @@ const Portfolio = () => {
     return (
       <>
         <Swiper
-          slidesPerView={3}
-          spaceBetween={440}
+          slidesPerView={2}
+          spaceBetween={20}
           slidesPerGroup={1}
           centeredSlides={true}
           loop={true}
