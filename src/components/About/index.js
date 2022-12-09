@@ -2,6 +2,11 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import WordCloud from '../WordCloud'
+//import { motion } from "framer-motion"
+
+//export const MyComponent = ({ isVisible }) => (
+//    <motion.div animate={{ opacity: isVisible ? 1 : 0 }} />
+//)
 //import Skills from '../Skills'
 //import BustImg from '../../assets/images/bust.svg'
 
