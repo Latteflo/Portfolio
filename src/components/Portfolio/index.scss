@@ -30,27 +30,32 @@
   .swiper {
     position: inherit;
     width: 90%;
-  }
 
-  .swiper-button-prev,
-  .swiper-rtl .swiper-button-next {
-    left: auto;
-    margin-left: -45px;
-  }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      left: auto;
+      margin-left: -45px;
+    }
 
-  .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .swiper-slide {
-    transform: scale(0.8);
-    transition: 0.3s ease-in-out;
-  }
+    .swiper-slide {
+      transform: scale(0.8);
+      transition: 0.3s ease-in-out;
+    }
 
-  .swiper-slide-active {
-    transform: scale(1);
+    .swiper-slide-active {
+      transform: scale(1);
+    }
+    .swiper-slide-prev,
+    .swiper-slide-next {
+      transform: scale(0.8);
+      filter: blur(2px);
+    }
   }
 
   .portfolio-item {
@@ -61,7 +66,7 @@
       height: 70%;
       border-radius: 15px;
     }
-    
+
     .content {
       position: absolute;
       top: 15px;
@@ -83,7 +88,7 @@
         rgba(0, 0, 0, 0.65) 69%,
         rgba(0, 0, 0, 0.65) 91%,
         rgba(0, 0, 0, 0.65) 100%
-      ); 
+      );
       background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -92,8 +97,8 @@
         rgba(0, 0, 0, 0.65) 69%,
         rgba(0, 0, 0, 0.65) 91%,
         rgba(0, 0, 0, 0.65) 100%
-      ); 
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); 
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -104,7 +109,6 @@
       transition: all 0.3s ease-in-out;
     }
 
-    
     .content:hover {
       opacity: 1;
       transform: translateY(150px);
