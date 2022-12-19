@@ -27,6 +27,13 @@
       "technologies": "React,JavaScript,HTML,CSS",
       "description": "This is a fit-club - gym webpage project done using create react app. It uses number counter library and framer-motion to give users an interactive experience while they explore the website.",
       "url": "https://fit-club-mu.vercel.app/"
-    }
+     },
+     {
+      "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/700/original/Screenshot_2022-12-19_235509.png?1671491458",
+      "title":"BadAss + Creative Agency",
+      "technologies":"React,JavaScript,HTML,CSS",
+      "description":"This is a landing page for the fictional BadAss Creative Agency, created as a coding practice project. The page was built using HTML, CSS and React, and was completed in a few hours.",
+      "url":"https://badass-creative-agency.vercel.app/"
+     }
   ]
 }
