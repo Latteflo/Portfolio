@@ -18,14 +18,14 @@ import {
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      <div className="mobile" >
+      <div className="mobile">
         <i className="fa fa-bars"></i>
       </div>
       <Link className="logo" to="/">
         <img src={LogoS} alt="logo" />
       </Link>
-      <nav className='nav-content'>
-        <NavLink exact="true" activeclassname="active"  to="/">
+      <nav className="nav-content">
+        <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink
@@ -58,15 +58,6 @@ const Sidebar = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://codepen.io/latteflo"
-          >
-            <FontAwesomeIcon icon={faCodepen} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
             href="https://www.linkedin.com/in/florentina-simion-a97bba73/"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
@@ -88,6 +79,15 @@ const Sidebar = () => {
             href="https://twitter.com/Simi_Flo/"
           >
             <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://codepen.io/latteflo"
+          >
+            <FontAwesomeIcon icon={faCodepen} color="#4d4d4e" />
           </a>
         </li>
       </ul>
