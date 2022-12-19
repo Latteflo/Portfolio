@@ -3,7 +3,6 @@ import AnimatedLetters from '../AnimatedLetters'
 import portfolioData from '../../data/portfolio.json'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper'
-import { ReactIdSwiper} from 'react-id-swiper';
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
@@ -24,27 +23,6 @@ const Portfolio = () => {
   })
 
   const renderPortfolio = (portfolio) => {
-    const params = {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        // when window width is >= 640px
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-      },
-    };
-
     return (
       <Swiper
       slidesPerView={2}
@@ -60,11 +38,9 @@ const Portfolio = () => {
       modules={[Pagination, Navigation]}
       className="mySwiper"
     >
-      <ReactIdSwiper {...params}>
         {portfolio.map((port, idx) => {
           return (
-            <div className="slide" key={idx}>
-              <SwiperSlide>
+              <SwiperSlide key={`portfolio-${port.id}-${idx}`}>
                 <div className="portfolio-item">
                   <img
                     src={port.cover}
@@ -86,10 +62,8 @@ const Portfolio = () => {
                   </div>
                 </div>
               </SwiperSlide>
-            </div>
           )
         })}
-      </ReactIdSwiper>
     </Swiper>
   )
 }
