@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <>
       <div className="contact-page">
-           <h1>
+        <h1>
           <span className={`${letterClass} _14 special`}>C</span>
           <AnimatedLetters
             letterClass={letterClass}
