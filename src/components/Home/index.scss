@@ -6,6 +6,19 @@
     transform: translateY(-50%);
     width: 800px;
     max-height: 100%;
+    transition: all 0.3s ease;
+
+    @media (max-width: 960px){
+      width: 600px;
+      left: 5%;
+      margin-right: 5%;
+    }
+
+    @media (max-width: 530px) {
+      width: 375px;
+      left: 2.5%;
+      margin-right: 2.5%;
+    }
   }
 
   .special {
@@ -13,6 +26,15 @@
     max-height: 90%;
     font-family: 'laBelleAurore';
     color: #ffd700;
+    transition: all 0.3s ease;
+
+    @media (max-width: 960px){
+      font-size: 7rem;
+    }
+
+    @media (max-width: 530px) {
+      font-size: 4rem;
+    }
   }
 
   h1 {
@@ -21,6 +43,15 @@
     margin: 0;
     font-family: 'laBelleAurore';
     font-weight: 400;
+    transition: all 0.3s ease;
+
+    @media (max-width: 960px){
+      font-size: 6rem;
+    }
+
+    @media (max-width: 530px) {
+      font-size: 3rem;
+    }
   }
 
   h2 {
@@ -59,15 +90,16 @@
   }
 }
 
-@media (max-width: 960px){
+@media (max-width: 960px) {
   .home-page {
     .text-zone {
       left: 4rem;
+      top: 25%;
       transform: translateY(-50%);
       width: 600px;
-      top: 25%;
       max-width: 100%;
       max-height: 100%;
+      margin-left: 10%;
     }
 
     .special {
@@ -77,12 +109,12 @@
     h1 {
       font-size: 6rem;
     }
+
     .flat-button {
       color: #ffd700;
-    
-  
+
       &:hover {
-        color: ffd700;
+        color: #ffd700;
       }
     }
   }
@@ -92,10 +124,11 @@
   .home-page {
     .text-zone {
       left: 1rem;
+      top: 30%;
       transform: translateY(-85%);
       width: 375px;
-      top: 30%;
       max-width: 96%;
+      margin-left: 5%;
     }
 
     .special {
