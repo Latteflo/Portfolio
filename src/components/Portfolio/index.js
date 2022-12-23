@@ -10,7 +10,6 @@ import './index.scss'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  console.log(portfolioData)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -81,7 +80,7 @@ const Portfolio = () => {
             />
           </h1>
         </div>
-        <div className="portfolio-data">
+        <div className="portfolio-data ">
           {renderPortfolio(portfolioData.portfolio)}
         </div>
       </div>
