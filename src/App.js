@@ -7,6 +7,8 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import { particlesCursor } from 'threejs-toys'
+import Resume from './components/About/resume/resume'
+import Certificates from './components/About/certificates/certificates'
 
 const pc = particlesCursor({
   canvas: document.querySelector('canvas'),
@@ -85,11 +87,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="About" element={<About />} />
+          <Route path="About/Resume" element={<Resume />} />
+          <Route path="About/Certificates" element={<Certificates />} />
+          <Route path="Portfolio" element={<Portfolio />} />
+          <Route path="Contact" element={<Contact />} />
           <Route
-            path=""
+            path="*"
             element={<p>Oops, Page doesn't exists! Nothing Here</p>}
           />
         </Route>
