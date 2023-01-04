@@ -34,6 +34,13 @@
       "technologies":"React,JavaScript,HTML,CSS",
       "description":"This is a landing page for the fictional BadAss Creative Agency, created as a coding practice project. The page was built using HTML, CSS and React, and was completed in a few hours.",
       "url":"https://badass-creative-agency.vercel.app/"
+     },
+     {
+      "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/457/original/project_printscreen.jpg?1672867615",
+      "title":"UN Women NGO page",
+      "technologies":"HTML, CSS, Bootstrap, and GSAP",
+      "description":"This project was created as an entry for the SHECODES.io contest. It is a tribute to UN Women and their work to empower women and girls around the world.It aims to highlight the important issues that UN Women works on and encourage visitors to get involved and support their efforts.",
+      "url":"https://un-women-latteflo.vercel.app/"
      }
   ]
 }
