@@ -1,13 +1,11 @@
 .about-page {
-  width: 100vw;
-  height: 100vh;
   margin: 0 auto;
   padding-top: 2rem;
   background-color: #000000;
-
+  width: 100%;
+  
   .img {
     background-image: url(../../assets/images/bust.png);
-    background-size: 35%;
     background-repeat: no-repeat;
     position: absolute;
     overflow: hidden;
@@ -92,6 +90,7 @@
       animation: fadeInAnimation 1s 1.8s backwards;
       white-space: nowrap;
       transition: all 150ms linear;
+      animation-delay: 1.8s;
       &:hover {
         background: #f7d100;
         border: 1px solid rgba(0, 0, 0, 0.05);
@@ -103,6 +102,7 @@
     }
   }
 }
+
 
 @media (max-width: 1200px) {
   .bottom-page {
