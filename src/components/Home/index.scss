@@ -2,13 +2,13 @@
   .text-zone {
     position: relative;
     left: 10%;
-    top: 25%;
+    top: 40%;
     transform: translateY(-50%);
     width: 800px;
     max-height: 100%;
     transition: all 0.3s ease;
 
-    @media (max-width: 960px){
+    @media (max-width: 960px) {
       width: 600px;
       left: 5%;
       margin-right: 5%;
@@ -28,7 +28,7 @@
     color: #ffd700;
     transition: all 0.3s ease;
 
-    @media (max-width: 960px){
+    @media (max-width: 960px) {
       font-size: 7rem;
     }
 
@@ -45,7 +45,7 @@
     font-weight: 400;
     transition: all 0.3s ease;
 
-    @media (max-width: 960px){
+    @media (max-width: 960px) {
       font-size: 6rem;
     }
 
@@ -90,11 +90,13 @@
   }
 }
 
+
+
 @media (max-width: 960px) {
   .home-page {
     .text-zone {
       left: 4rem;
-      top: 25%;
+      top: 45%;
       transform: translateY(-50%);
       width: 600px;
       max-width: 100%;
@@ -124,7 +126,7 @@
   .home-page {
     .text-zone {
       left: 1rem;
-      top: 30%;
+      top: 60%;
       transform: translateY(-85%);
       width: 375px;
       max-width: 96%;
