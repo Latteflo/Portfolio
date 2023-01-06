@@ -37,23 +37,31 @@ const About = () => {
             <br />
             <p>
               {' '}
-              I am an ambitious front end developer based in Belgium, currently
-              looking for a role in an IT company with the opportunity to work
-              with the latest technologies on diverse projects.{' '}
+              I am a front end developer based in Belgium, looking for an IT
+              company where I can work with the latest technologies on diverse
+              projects. With a background in aviation, I have gained
+              problem-solving skills and the ability to think outside the box.
+              My attention to detail is also an asset when working on web
+              projects.
             </p>
             <p>
-              I'm quietly confident, naturally curious and a team-worker who is
-              perpetually working on improving my skills.
+              I am quietly confident, naturally curious, and a team-player who
+              is continuously improving my skills. I started learning to code in
+              May 2022 and have been dedicated to growing as a developer. I am a
+              fast learner and always up for new challenges.{' '}
             </p>
             <p>
-              With a background in aviation, my experience has given me the
-              ability to problem solve and think outside the box, which has come
-              in handy in my career as a developer. I have also found that my
-              attention to detail is an asset when working on web projects.
+              In addition to my technical abilities, I am a strong communicator
+              and adapt well to different team environments. I take pride in my
+              work and strive for excellence in everything I do.
             </p>
             <p>
-              I'm a fast learner and I'm always looking for new challenges and
-              opportunities to grow as a developer.
+              I am excited to bring my passion for technology and my desire to
+              learn and grow to a new company. I believe that with my
+              combination of technical skills and soft skills, I can make a
+              positive contribution to any team and project. I am eager to find
+              a role where I can use my skills to make an impact and continue to
+              develop as a professional.
             </p>
           </div>
           <div className="bottom-page">
