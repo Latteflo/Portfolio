@@ -3,13 +3,14 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import WordCloud from '../WordCloud'
 import { Link } from 'react-router-dom'
-//import { motion } from "framer-motion"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+  faCodepen,
+} from '@fortawesome/free-brands-svg-icons'
 
-//export const MyComponent = ({ isVisible }) => (
-//    <motion.div animate={{ opacity: isVisible ? 1 : 0 }} />
-//)
-//import Skills from '../Skills'
-//import BustImg from '../../assets/images/bust.svg'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -23,8 +24,7 @@ const About = () => {
   return (
     <>
       <div className="about-page">
-        <div className="img"></div>
-        <div className="text-flex-about">
+        <div className="about">
           <div className="text-zone">
             <h1>
               <span className={`${letterClass} _14 special`}>A</span>
@@ -34,7 +34,6 @@ const About = () => {
                 idx={15}
               />
             </h1>
-            <br />
             <p>
               {' '}
               I am a front end developer based in Belgium, looking for an IT
@@ -51,11 +50,6 @@ const About = () => {
               fast learner and always up for new challenges.{' '}
             </p>
             <p>
-              In addition to my technical abilities, I am a strong communicator
-              and adapt well to different team environments. I take pride in my
-              work and strive for excellence in everything I do.
-            </p>
-            <p>
               I am excited to bring my passion for technology and my desire to
               learn and grow to a new company. I believe that with my
               combination of technical skills and soft skills, I can make a
@@ -64,18 +58,44 @@ const About = () => {
               develop as a professional.
             </p>
           </div>
-          <div className="bottom-page">
-            <div className="about-more-details">
-              <Link to="/About/Resume" className="resume-btn">
-                My Resume
-              </Link>
-              <Link to="/About/Certificates" className="certificates-btn">
-                My Certificates
-              </Link>
+          <div className="bottom-zone">
+            <div className="reach">
+          <Link to="/About/Resume" className="flat-button">
+            My Resume
+          </Link>
+          <span className="social-links-about">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/florentina-simion-a97bba73/"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Latteflo"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>{' '}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/Simi_Flo/"
+          >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://codepen.io/latteflo"
+          >
+            <FontAwesomeIcon icon={faCodepen} />
+          </a>
+        </span>
             </div>
-            {/*<Skills/>*/}
-            <WordCloud />
-          </div>
+         <span class="wordcloud"> <WordCloud /></span>
+         </div>
         </div>
       </div>
     </>

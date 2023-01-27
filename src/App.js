@@ -7,7 +7,6 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import Resume from './components/About/resume/resume'
-import Certificates from './components/About/certificates/certificates'
 import Loader from 'react-loaders'
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
           <Route index element={<Home />} />
           <Route path="About" element={<About />} />
           <Route path="About/Resume" element={<Resume />} />
-          <Route path="About/Certificates" element={<Certificates />} />
           <Route path="Portfolio" element={<Portfolio />} />
           <Route path="Contact" element={<Contact />} />
           <Route
@@ -27,7 +25,7 @@ function App() {
           />
         </Route>
       </Routes>
-      <Loader type="ball-pulse" active />
+      <Loader type="semi-circle-spin" active />
     </>
   )
 }

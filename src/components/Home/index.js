@@ -75,10 +75,6 @@ document.addEventListener('touchmove', function (evt) {
   pc.uniforms.uMouse.value.y = touchPos.y
 }, false);
 
-
-
-
-
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['l', 'o', 'r', 'e', 'n', 't', 'i', 'n', 'a']
@@ -108,7 +104,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container home-page">
+      <div className="home-page">
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
@@ -133,16 +129,19 @@ const Home = () => {
               strArray={surnameArray}
               idx={1}
             />
-            <br />
+            <br />  
+             </h1>
+<h2>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
               idx={22}
+              className="job"
             />
-          </h1>
-          <h2>
-            Frontend Developer / JavaScript Enthusiast / FullStack Aspirer
           </h2>
+          <h3>
+            Frontend Developer / JavaScript Enthusiast / FullStack Aspirer
+          </h3>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

@@ -3,170 +3,109 @@
 }
 
 .portfolio-page {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  padding-left: 9rem;
+  height: 100vh;
   background-color: #000;
 
-  h1.page-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 4rem;
-    font-size-adjust: inherit;
-  }
+  .content {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    height: 100%;
 
-  .special {
-    color: #ffd700;
-    transition: color 0.3s ease-in-out;
-    &:hover {
-      color: #fff;
-    }
-  }
-
-  .swiper {
-    position: inherit;
-    width: 90%;
-
-    .swiper-button-prev,
-    .swiper-rtl .swiper-button-next {
-      left: auto;
-      margin-left: -45px;
-    }
-
-    .slide {
+    h1.page-title {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      color: #fff;
+      font-size: 6rem;
+      font-size-adjust: inherit;
     }
-
-    .swiper-slide {
-      transform: scale(0.8);
-      transition: 0.3s ease-in-out;
-    }
-
-    .swiper-slide-active {
-      transform: scale(1);
-    }
-    .swiper-slide-prev,
-    .swiper-slide-next {
-      transform: scale(0.8);
-      filter: blur(2px);
-    }
-  }
-
-  .portfolio-item {
-    height: 600px;
-
-    img {
-      width: 100%;
-      height: 70%;
-      border-radius: 15px;
-    }
-
-    .content {
-      position: absolute;
-      top: 15px;
-      border-radius: 0 0 15px 15px;
-      background: -moz-linear-gradient(
-        top,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.47) 36%,
-        rgba(0, 0, 0, 0.65) 50%,
-        rgba(0, 0, 0, 0.65) 69%,
-        rgba(0, 0, 0, 0.65) 91%,
-        rgba(0, 0, 0, 0.65) 100%
-      ); /* FF3.6-15 */
-      background: -webkit-linear-gradient(
-        top,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.47) 36%,
-        rgba(0, 0, 0, 0.65) 50%,
-        rgba(0, 0, 0, 0.65) 69%,
-        rgba(0, 0, 0, 0.65) 91%,
-        rgba(0, 0, 0, 0.65) 100%
-      ); 
-      background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.47) 36%,
-        rgba(0, 0, 0, 0.65) 50%,
-        rgba(0, 0, 0, 0.65) 69%,
-        rgba(0, 0, 0, 0.65) 91%,
-        rgba(0, 0, 0, 0.65) 100%
-      ); 
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      font-family: laBelleAurore, sans-serif;
-      padding: 2rem;
-      opacity: 0;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .content:hover {
-      opacity: 1;
-      transform: translateY(150px);
-      transition: all 0.3s ease-in-out;
-    }
-
-    .title {
+    .special {
       color: #ffd700;
-      font-size: 2.5rem;
-      letter-spacing: 0.2px;
-    }
-    
-    .technologies {
-      color: #ffd700;
-      span {
-        text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
+      &:hover {
         color: #fff;
       }
     }
-    
-    .description {
-      font-size: 1.3rem;
+
+    .page-description {
       color: #fff;
+      font-size: 1.8rem;
       font-weight: 400;
+      margin: 0 0 2rem 0;
     }
-    
-    .btn {
-      font-size: 2rem;
-      text-transform: uppercase;
-      color: #ffd700;
-      font-weight: 800;
-      letter-spacing: 4px;
-      padding: 4px 40px;
-      background-color: #181818;
-      border: 2px solid #ffd700;
-      border-radius: 5px;
-      margin: 0 auto;
-      animation: fadeInAnimation 1s 1.8s backwards;
-      white-space: nowrap;
-      transition: all 150ms linear;
-      cursor: pointer;
-    }
-    
-    .btn:hover {
-      background: darken(#ffd700, 1.5%);
-      border: 1px solid #181818;
-      color: #181818;
-    }
-    
-    @keyframes fadeInAnimation {
-      0% {
-        opacity: 0;
-        transform: translateY(50px);
+
+    .portfolio-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80%;
+        border-radius: 15px;
       }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
+      .content {
+        display: none;
+      }
+    }
+    .portfolio-item:active {
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+        .title {
+          color: #fff;
+          font-size: 2.5rem;
+          letter-spacing: 0.2px;
+        }
+        .technologies {
+          color: #fff;
+          span {
+            text-transform: uppercase;
+            color: #ffd700;
+          }
+          .description {
+            font-size: 1.3rem;
+            color: #fff;
+            font-weight: 400;
+            .btn {
+              font-size: 2rem;
+              text-transform: uppercase;
+              color: #ffd700;
+              font-weight: 800;
+              letter-spacing: 4px;
+              padding: 4px 40px;
+              background-color: #181818;
+              border: 2px solid #ffd700;
+              border-radius: 5px;
+              margin: 0 auto;
+              animation: fadeInAnimation 1s 1.8s backwards;
+              white-space: nowrap;
+              transition: all 150ms linear;
+              cursor: pointer;
+            }
+
+            .btn:hover {
+              background: darken(#ffd700, 1.5%);
+              border: 1px solid #181818;
+              color: #181818;
+            }
+          }
+        }
       }
     }
   }
-}    
+}
