@@ -1,53 +1,64 @@
 .contact-page {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0 auto;
-  padding-left: 4%;
-  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100vh;
   background-color: #000;
 
-  .special {
-    color: #ffd700;
-  }
-
-  h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 100%;
-    align-items: center;
-    color: #fff;
-    font-size: 6rem;
-    font-size-adjust: inherit;
-  }
-
-  .text-zone {
-    flex: 1;
-    margin: 4rem;
-    width: 100%;
+  .contact-content {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: #fff;
-    font-size: 1.5rem;
-    font-size-adjust: inherit;
-    p {
-      margin: 0;
-      padding: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .special {
+      color: #ffd700;
+    }
+    .intro {
+      width: 100%;
+      h1 {
+        color: #fff;
+        font-size: 5rem;
+      }
+      .socials {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        color: #fff;
+        font-size: 1.5rem;
+
+        a{
+          color: #ffd700;
+          font-size: 3rem;
+        }
+      }
+    }
+    .text-zone {
+      width: 100%;
+      color: #fff;
+      font-size: 1.5rem;
     }
   }
 }
-
+.contact-form-map {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
 .contact-form {
   flex: 1;
-  width:100%;
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 15px;
 
@@ -60,7 +71,6 @@
       margin: 0;
       list-style: none;
       margin-bottom: 10px;
-      opacity: 0;
       overflow: hidden;
       display: block;
       clear: both;
@@ -112,13 +122,11 @@
     text-decoration: none;
     padding: 8px 10px;
     border: 1px solid #ffd700;
-    float: left;
     border-radius: 4px;
     background: 0 0;
     text-transform: uppercase;
-    float: right;
     text-align: center;
-    margin-right: 10px;
+    margin: 0 auto;
 
     &:hover {
       .btn:hover {
@@ -129,45 +137,20 @@
         text-decoration: none;
         transition: all 250ms linear;
       }
-    }
-  }
-}
+    }}
 
-.map-wrap {
-  flex: 1;
-  height: 55%;
-  width: 50%;
-  overflow: hidden;
-  margin: 0 auto;
-  border-radius: 15px;
-}
-
-.leaflet-container {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-
-
-@media (max-width: 960px) {
-  .contact-page {
-    margin-top: 6rem;
-    h1 {
-      margin: 0;
-      padding: 0;
-    }
-  }
-}
-
-@media (max-width: 530px) {
-  .contact-page {
-    .text-zone {
-      flex: 1 ;
-      margin: 0;
-    }
     .map-wrap {
-      display: none;
+      flex: 1;  
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      border-radius: 15px;
+
+      .leaflet-container{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+      }
     }
-  }
+  
 }

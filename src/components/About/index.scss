@@ -21,6 +21,13 @@
     }
 
     .text-zone {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    
       h1 {
         font-size: 8rem;
         font-family: 'Cinzel';
