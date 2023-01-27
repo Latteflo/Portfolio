@@ -6,11 +6,8 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope , faPhone} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-
-
-
 
 const Contact = () => {
   const form = useRef()
@@ -57,22 +54,22 @@ const Contact = () => {
               />
             </h1>
             <span className="socials">
-            <a href="mailto:sf.simion.f@gmail.com">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-            <a href="tel:+40729784503">
-              <FontAwesomeIcon icon={faPhone} />
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=+40729784503">
-              <FontAwesomeIcon icon={faWhatsapp} />
-            </a>
+              <a href="mailto:sf.simion.f@gmail.com">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+              <a href="tel:+40729784503">
+                <FontAwesomeIcon icon={faPhone} />
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=+40729784503">
+                <FontAwesomeIcon icon={faWhatsapp} />
+              </a>
 
-            <a href="https://www.linkedin.com/in/flori-simion-a97bba73/"> 
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="https://github.com/Latteflo">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
+              <a href="https://www.linkedin.com/in/flori-simion-a97bba73/">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href="https://github.com/Latteflo">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
             </span>
           </div>
           <div className="text-zone">
@@ -126,8 +123,7 @@ const Contact = () => {
             <div className="map-wrap">
               <MapContainer center={[50.8466, 4.3528]} zoom={13}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Marker position={[50.8466, 4.3528]}>
-                </Marker>
+                <Marker position={[50.8466, 4.3528]}></Marker>
               </MapContainer>
             </div>
           </div>
