@@ -1,4 +1,9 @@
-$primary-color: #ffd700;
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffd700;
+}
 
 @import '~loaders.css/src/animations/semi-circle-spin.scss';
 

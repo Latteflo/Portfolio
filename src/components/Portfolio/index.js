@@ -21,10 +21,6 @@ const Portfolio = () => {
     }
   })
 
-  const toggle = (e) => {
-    e.currentTarget.classList.toggle('active')
-  }
-
   const renderPortfolio = (portfolio) => {
     return (
       <Swiper
@@ -40,8 +36,10 @@ const Portfolio = () => {
       >
         {portfolio.map((port, idx) => {
           return (
-            <SwiperSlide key={`portfolio-${port.id}-${idx}`}>
-              <div className="portfolio-item" onClick={toggle}>
+            <SwiperSlide key={`portfolio-${port.id}-${idx}`} index={idx}>
+              <div
+                className="portfolio-item"
+              >
                 <img
                   src={port.cover}
                   className="portfolio-image"
@@ -64,7 +62,6 @@ const Portfolio = () => {
       </Swiper>
     )
   }
-
   return (
     <>
       <div className="portfolio-page">
@@ -82,8 +79,6 @@ const Portfolio = () => {
               Here you will find a selection of my recent projects that showcase
               my skills and experience in various areas of design and
               development.
-              <br />
-              Click on any project to see more details.
             </p>
           </div>
           <div className="portfolio-data ">
