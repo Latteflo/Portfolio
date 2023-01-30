@@ -43,37 +43,45 @@ document.body.addEventListener('click', () => {
 
 const canvas = document.querySelector('canvas')
 
-//function to get mouse position and pass it to the particlesCursor 
+//function to get mouse position and pass it to the particlesCursor
 function getMousePos(canvas, evt) {
-  let rect = canvas.getBoundingClientRect();
+  let rect = canvas.getBoundingClientRect()
   return {
     x: evt.clientX - rect.left,
-    y: evt.clientY - rect.top
-  };
+    y: evt.clientY - rect.top,
+  }
 }
 
 //function to get touch position and pass it to the particlesCursor
 function getTouchPos(canvas, evt) {
-  let rect = canvas.getBoundingClientRect();
+  let rect = canvas.getBoundingClientRect()
   return {
     x: evt.touches[0].clientX - rect.left,
-    y: evt.touches[0].clientY - rect.top
-  };
+    y: evt.touches[0].clientY - rect.top,
+  }
 }
 
 //connect mouse position to the particlesCursor
-document.addEventListener('mousemove', function (evt) {
-  let mousePos = getMousePos(canvas, evt);
-  pc.uniforms.uMouse.value.x = mousePos.x
-  pc.uniforms.uMouse.value.y = mousePos.y
-}, false);
+document.addEventListener(
+  'mousemove',
+  function (evt) {
+    let mousePos = getMousePos(canvas, evt)
+    pc.uniforms.uMouse.value.x = mousePos.x
+    pc.uniforms.uMouse.value.y = mousePos.y
+  },
+  false
+)
 
 //connect touch position to the particlesCursor
-document.addEventListener('touchmove', function (evt) {
-  let touchPos = getTouchPos(canvas, evt);
-  pc.uniforms.uMouse.value.x = touchPos.x
-  pc.uniforms.uMouse.value.y = touchPos.y
-}, false);
+document.addEventListener(
+  'touchmove',
+  function (evt) {
+    let touchPos = getTouchPos(canvas, evt)
+    pc.uniforms.uMouse.value.x = touchPos.x
+    pc.uniforms.uMouse.value.y = touchPos.y
+  },
+  false
+)
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -129,9 +137,9 @@ const Home = () => {
               strArray={surnameArray}
               idx={1}
             />
-            <br />  
-             </h1>
-<h2>
+            <br />
+          </h1>
+          <h2>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
