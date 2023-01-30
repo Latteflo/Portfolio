@@ -3,37 +3,117 @@
     {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/299/original/Dictionary.png?1655286192",
       "title": "Dictionary",
-      "technologies": "React,JavaScript,HTML,CSS",
-      "description": "A dictionary app that allows you to search for words and see their definitions. It is built with React and the Merriam-Webster dictionary API and Pexels Api .",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/react.svg", "name": "React" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        },
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
+      ],
+      "description": "A dictionary app that allows you to search for words and see their definitions. It is built with React and the Merriam-Webster dictionary API and Pexels API.",
+      "learned": [
+        "Working with API calls",
+        "Integrating multiple APIs",
+        "Handling API responses with React"
+      ],
       "url": "https://dictionary-project-flo.netlify.app/"
     },
     {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/302/original/Weather.png?1655286381",
       "title": "Weather App",
-      "technologies": "React,JavaScript,HTML,CSS",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/react.svg", "name": "React" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        },
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
+      ],
       "description": "A weather app that allows you to search for a city and see the current weather and the forecast for the next 5 days. It is built with React and the OpenWeather API.",
+      "learned": [
+        "Working with weather APIs",
+        "Handling API responses with React",
+        "Displaying weather data in a user-friendly format"
+      ],
+      "struggled": [
+        "Converting temperature units",
+        "Managing API request limits"
+      ],
       "url": "https://weather-sf.netlify.app/"
     },
     {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/162/original/1.png?1670509811",
       "title": "Fit-Club Gym",
-      "technologies": "React,JavaScript,HTML,CSS",
-      "description": "This is a fit-club - gym webpage project done using create react app. It uses number counter library and framer-motion to give users an interactive experience while they explore the website.",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/react.svg", "name": "React" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        },
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
+      ],
+      "description": "A fit-club - gym webpage project that uses Create React App and provides an interactive experience through the use of number counters and framer-motion.",
+      "learned": [
+        "Working with Create React App",
+        "Adding interactivity with framer-motion and number counters",
+        "Styling a webpage using HTML and CSS"
+      ],
+      "struggled": [
+        "Working with number counters in React",
+        "Implementing framer-motion animations smoothly"
+      ],
       "url": "https://fit-club-mu.vercel.app/"
-     },
-     {
-      "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/700/original/Screenshot_2022-12-19_235509.png?1671491458",
-      "title":"BadAss + Creative Agency",
-      "technologies":"React,JavaScript,HTML,CSS",
-      "description":"This is a landing page for the fictional BadAss Creative Agency, created as a coding practice project. The page was built using HTML, CSS and React, and was completed in a few hours.",
-      "url":"https://badass-creative-agency.vercel.app/"
-     },
-     {
-      "cover":"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/457/original/project_printscreen.jpg?1672867615",
-      "title":"UN Women NGO page",
-      "technologies":"HTML, CSS, Bootstrap, and GSAP",
-      "description":"This project was created as an entry for the SHECODES.io contest. It is a tribute to UN Women and their work to empower women and girls around the world.It aims to highlight the important issues that UN Women works on and encourage visitors to get involved and support their efforts.",
-      "url":"https://un-women-latteflo.vercel.app/"
-     }
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/700/original/Screenshot_2022-12-19_235509.png?1671491458",
+      "title": "BadAss + Creative Agency",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/react.svg", "name": "React" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        },
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
+      ],
+      "description": "A landing page for the fictional BadAss Creative Agency, built with HTML, CSS and React in a few hours for coding practice.",
+      "learned": [
+        "Working with HTML, CSS and React",
+        "Building a landing page quickly"
+      ],
+      "struggled": ["Balancing style and functionality"],
+      "url": "https://badass-creative-agency.vercel.app/"
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/457/original/project_printscreen.jpg?1672867615",
+      "title": "UN Women NGO page",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" },
+        {
+          "icon": "https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg",
+          "name": "Bootstrap"
+        },
+        {
+          "icon": "https://www.stickpng.com/assets/images/584830e8cef1014c0b5e4a1e.png",
+          "name": "GSAP"
+        }
+      ],
+      "description": "This project was created as an entry for the SHECODES.io contest. It is a tribute to UN Women and their work to empower women and girls around the world.It aims to highlight the important issues that UN Women works on and encourage visitors to get involved and support their efforts.",
+      "learned": [
+        "Using Bootstrap for responsive design",
+        "Animating elements with GSAP",
+        "Creating a tribute page with a clear message"
+      ],
+      "struggled": [
+        "Balancing design and functionality",
+        "Working with multiple animations on a single page"
+      ],
+      "url": "https://un-women-latteflo.vercel.app/"
+    }
   ]
 }
