@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import AnimatedLetters from '../AnimatedLetters'
 import portfolioData from '../../data/portfolio.json'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Navigation } from 'swiper'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [expanded, setExpanded] = useState(null)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -19,47 +15,78 @@ const Portfolio = () => {
     return () => {
       clearTimeout(timer)
     }
-  })
+  }, [])
+
+  const handleExpand = (idx) => {
+    setExpanded(idx)
+  }
+
+  const handleClose = () => {
+    setExpanded(null)
+  }
 
   const renderPortfolio = (portfolio) => {
     return (
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
+      <div className="portfolio-grid">
         {portfolio.map((port, idx) => {
           return (
-            <SwiperSlide key={`portfolio-${port.id}-${idx}`} index={idx}>
-              <div
-                className="portfolio-item"
-              >
-                <img
-                  src={port.cover}
-                  className="portfolio-image"
-                  alt="portfolio"
-                />
-                <div className="content">
+            <div
+              key={`portfolio-${port.id}-${idx}`}
+              className={`portfolio-item ${expanded === idx ? 'expanded' : ''}`}
+            >
+              <div className="container">
+                <div className="card" onClick={() => handleExpand(idx)}>
+                  <img
+                    src={port.cover}
+                    className="portfolio-image"
+                    alt="portfolio"
+                  />
                   <p className="title"> {port.title} </p>
-                  <p className="technologies">
-                    <span>Build with:</span> {port.technologies}{' '}
-                  </p>
-                  <h4 className="description"> {port.description} </h4>
-                  <button className="btn" onClick={() => window.open(port.url)}>
-                    View
-                  </button>
                 </div>
-              </div>
-            </SwiperSlide>
+                <div className="open-content">
+                  <button onClick={handleClose} className="close-content">
+                    <span>X</span>
+                  </button>
+                  <img
+                    className="open-content-image"
+                    src={port.cover}
+                    alt="open-page "
+                  />
+                  <div className="open-content-text">
+                    <h2>{port.title}</h2>
+                    <div className="content">
+                      <p className="technologies">
+                        <span>Build with:</span>
+                        {port.technologies.map((tech) => (
+                          <img
+                            className="tech-icon"
+                            key={tech.name}
+                            src={tech.icon}
+                            alt={tech.name}
+                          />
+                        ))}
+                      </p>
+                      <h4 className="description">{port.description}</h4>
+                      {/*<p className="learned">
+                        Things I've learned:
+                        {port.learned.map((item, index) => (
+                          <span key={index}>{item[0]}</span>
+                        ))}
+                      </p>*/}
+                      <button
+                        className="btn"
+                        onClick={() => window.open(port.url)}
+                      >
+                        View Live
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>{' '}
+            </div>
           )
         })}
-      </Swiper>
+      </div>
     )
   }
   return (
@@ -81,7 +108,7 @@ const Portfolio = () => {
               development.
             </p>
           </div>
-          <div className="portfolio-data ">
+          <div className="portfolio-data">
             {renderPortfolio(portfolioData.portfolio)}
           </div>
         </div>
