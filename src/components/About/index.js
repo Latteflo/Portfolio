@@ -15,8 +15,8 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    setLetterClass('text-animate-hover');
-  }, []);
+    setLetterClass('text-animate-hover')
+  }, [])
 
   return (
     <>
@@ -57,8 +57,14 @@ const About = () => {
           </div>
           <div className="bottom-zone">
             <div className="reach">
-              <a href="your-pdf-file.pdf" download className="flat-button">
-                  My Resume <FontAwesomeIcon icon={faDownload} />
+              <a
+                href="https://drive.google.com/file/d/10APRQA5lvVN_A5G9fyO_Mr05fSw9kFzH/view?usp=share_link"
+                download
+                className="flat-button"
+                rel='noreferrer'
+                target="_blank"
+              >
+                My Resume <FontAwesomeIcon icon={faDownload} />
               </a>
               <span className="social-links-about">
                 <a
