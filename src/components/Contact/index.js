@@ -14,10 +14,8 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    setLetterClass('text-animate-hover');
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -45,14 +43,14 @@ const Contact = () => {
       <div className="contact-page">
         <div className="contact-content">
           <div className="intro">
-            <h1>
+            <h2 className='title'>
               <span className={`${letterClass} _14 special`}>C</span>
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={['o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
                 idx={15}
               />
-            </h1>
+            </h2>
             <span className="socials">
               <a href="mailto:sf.simion.f@gmail.com">
                 <FontAwesomeIcon icon={faEnvelope} />

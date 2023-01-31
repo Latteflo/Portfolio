@@ -6,7 +6,6 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
-import Resume from './components/About/resume/resume'
 import Loader from 'react-loaders'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="About" element={<About />} />
-          <Route path="About/Resume" element={<Resume />} />
           <Route path="Portfolio" element={<Portfolio />} />
           <Route path="Contact" element={<Contact />} />
           <Route

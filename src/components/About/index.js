@@ -2,7 +2,6 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import WordCloud from '../WordCloud'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
@@ -10,30 +9,28 @@ import {
   faTwitter,
   faCodepen,
 } from '@fortawesome/free-brands-svg-icons'
-
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    setLetterClass('text-animate-hover');
+  }, []);
 
   return (
     <>
       <div className="about-page">
         <div className="about">
           <div className="text-zone">
-            <h1>
+            <h2>
               <span className={`${letterClass} _14 special`}>A</span>
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={['b', 'o', 'u', 't', ' ', 'm', 'e']}
                 idx={15}
               />
-            </h1>
+            </h2>
             <p>
               {' '}
               I am a front end developer based in Belgium, looking for an IT
@@ -60,42 +57,45 @@ const About = () => {
           </div>
           <div className="bottom-zone">
             <div className="reach">
-          <Link to="/About/Resume" className="flat-button">
-            My Resume
-          </Link>
-          <span className="social-links-about">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/florentina-simion-a97bba73/"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/Latteflo"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>{' '}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://twitter.com/Simi_Flo/"
-          >
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://codepen.io/latteflo"
-          >
-            <FontAwesomeIcon icon={faCodepen} />
-          </a>
-        </span>
+              <a href="your-pdf-file.pdf" download className="flat-button">
+                  My Resume <FontAwesomeIcon icon={faDownload} />
+              </a>
+              <span className="social-links-about">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/florentina-simion-a97bba73/"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Latteflo"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>{' '}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/Simi_Flo/"
+                >
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://codepen.io/latteflo"
+                >
+                  <FontAwesomeIcon icon={faCodepen} />
+                </a>
+              </span>
             </div>
-         <span class="wordcloud"> <WordCloud /></span>
-         </div>
+            <span class="wordcloud">
+              {' '}
+              <WordCloud />
+            </span>
+          </div>
         </div>
       </div>
     </>

@@ -8,14 +8,8 @@ const Portfolio = () => {
   const [expanded, setExpanded] = useState(null)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-
-    return () => {
-      clearTimeout(timer)
-    }
-  }, [])
+    setLetterClass('text-animate-hover');
+  }, []);
 
   const handleExpand = (idx) => {
     setExpanded(idx)
@@ -94,14 +88,14 @@ const Portfolio = () => {
       <div className="portfolio-page">
         <div className="content">
           <div className="text-zone">
-            <h1 className="page-title">
+            <h2 className="page-title">
               <span className={`${letterClass} _14 special`}>P</span>
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={['o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
                 idx={15}
               />
-            </h1>
+            </h2>
             <p className="page-description">
               Here you will find a selection of my recent projects that showcase
               my skills and experience in various areas of design and

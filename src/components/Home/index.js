@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
-//import LogoTitle from '../../assets/images/logo-f.png'
 import './index.scss'
 import { particlesCursor } from 'threejs-toys'
 
@@ -105,10 +104,8 @@ const Home = () => {
   ]
 
   useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    setLetterClass('text-animate-hover');
+  }, []);
 
   return (
     <>
