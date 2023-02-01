@@ -102,12 +102,13 @@
                 width: 25px;
                 height: 25px;
                 border-radius: 50%;
-                border: 2px solid #000;
+                border:none;
                 cursor: pointer;
                 color: #fff;
                 background-color: #181818;
                 &:hover {
                   background-color: #ffd700;
+                  color: #000;
                 }
                 span {
                   transform: translateY(-50%) rotate(-90deg);
@@ -156,7 +157,7 @@
                   color: #000;
                   text-transform: uppercase;
 
-                  .tech-icon{
+                  .tech-icon {
                     margin: 0 0.5rem;
                     width: 20px;
                     height: 20px;
@@ -176,28 +177,29 @@
                   font-weight: 400;
                   color: #000;
                 }
-               
-                .btn {
+                .links {
                   display: flex;
-                  justify-content: center;
+                  flex-direction: row;
+                  justify-content: space-evenly;
                   align-items: center;
-                  margin: 0 auto;
-                  margin-bottom: 2rem;
-                  width: 50%;
-                  height: 4rem;
-                  background-color: #ffd700;
-                  border: none;
-                  border-radius: 5px;
-                  color: #000;
-                  font-size: 1.5rem;
-                  font-weight: 700;
-                  text-transform: uppercase;
-                  letter-spacing: 0.2px;
-                  cursor: pointer;
-                  transition: all 0.3s ease-in-out;
-                  &:hover {
-                    background-color: #000;
-                    color: #ffd700;
+                  flex-wrap: wrap;
+
+                  .btn {
+                    margin: 0 auto;
+                    padding: 1.5rem 3rem;
+                    background-color: #ffd700;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2px;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                      background-color: #000;
+                      color: #ffd700;
+                    }
                   }
                 }
               }

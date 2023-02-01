@@ -18,7 +18,8 @@
          }
       ],
       "description": "A dictionary app that allows you to search for words and see their definitions. It is built with React and the Merriam-Webster dictionary API and Pexels API.",
-      "url": "https://dictionary-project-flo.netlify.app/"
+      "url": "https://dictionary-project-flo.netlify.app/",
+      "urlGithub": "https://github.com/Latteflo/Dictionary"
     },
     {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/302/original/Weather.png?1655286381",
@@ -33,7 +34,8 @@
         { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
       ],
       "description": "A weather app that allows you to search for a city and see the current weather and the forecast for the next 5 days. It is built with React and the OpenWeather API.",
-      "url": "https://weather-sf.netlify.app/"
+      "url": "https://weather-sf.netlify.app/",
+      "urlGithub": "https://github.com/Latteflo/React-Weather-App"
     },
     {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/162/original/1.png?1670509811",
@@ -48,7 +50,8 @@
         { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
       ],
       "description": "A fit-club - gym webpage project that uses Create React App and provides an interactive experience through the use of number counters and framer-motion.",
-      "url": "https://fit-club-mu.vercel.app/"
+      "url": "https://fit-club-mu.vercel.app/",
+      "urlGithub": "https://github.com/Latteflo/Fit-Club"
     },
     {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/700/original/Screenshot_2022-12-19_235509.png?1671491458",
@@ -63,7 +66,8 @@
         { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
       ],
       "description": "A landing page for the fictional BadAss Creative Agency, built with HTML, CSS and React in a few hours for coding practice.",
-      "url": "https://badass-creative-agency.vercel.app/"
+      "url": "https://badass-creative-agency.vercel.app/",
+      "urlGithub": "https://github.com/Latteflo/BadAss-Creative-Agency"
     },
     {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/457/original/project_printscreen.jpg?1672867615",
@@ -81,7 +85,8 @@
         }
       ],
       "description": "This project was created as an entry for the SHECODES.io contest. It is a tribute to UN Women and their work to empower women and girls around the world.It aims to highlight the important issues that UN Women works on and encourage visitors to get involved and support their efforts.",
-      "url": "https://un-women-latteflo.vercel.app/"
+      "url": "https://un-women-latteflo.vercel.app/",
+      "urlGithub":"https://github.com/Latteflo/UN-Women"
     },
     {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/278/original/Jackson_W.jpeg?1675207573",
@@ -93,7 +98,8 @@
         { "icon": "https://cdn.svgporn.com/logos/threejs.svg", "name": "Three.js" }
       ],
       "description": "This project is a tribute to the talented singer Jackson Wang. The website aims to showcase his musical career, achievements and style. Built using HTML, CSS, Greensock and Three.js, it offers a unique and interactive experience for fans of Jackson Wang.",
-      "url": "https://artist-page-jackson-wang.vercel.app/"
+      "url": "https://artist-page-jackson-wang.vercel.app/",
+      "urlGithub":"https://github.com/Latteflo/Artist-page-Jackson-Wang"
     }
     
   ]

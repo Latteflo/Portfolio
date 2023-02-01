@@ -61,18 +61,20 @@ const Portfolio = () => {
                         ))}
                       </p>
                       <h4 className="description">{port.description}</h4>
-                      {/*<p className="learned">
-                        Things I've learned:
-                        {port.learned.map((item, index) => (
-                          <span key={index}>{item[0]}</span>
-                        ))}
-                      </p>*/}
+                  <div className="links">
                       <button
                         className="btn"
                         onClick={() => window.open(port.url)}
                       >
-                        View Live
+                        Live
                       </button>
+                      <button
+                        className="btn"
+                        onClick={() => window.open(port.urlGithub)}
+                      >
+                        Code
+                      </button>
+                      </div>
                     </div>
                   </div>
                 </div>
