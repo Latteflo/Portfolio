@@ -14,9 +14,9 @@
     width: 70%;
     transition: all 0.3s ease;
   }
-@media (max-width: 960px) {
+   @media (max-width: 960px) {
   .text-zone {
-    width: 90%;
+    width: 96%;
   }
 }
 
@@ -82,12 +82,13 @@
       font-size: 3rem;
     }
     @media (max-width: 380px) {
-      font-size: 2rem;
-    }
+        font-size: 2.6rem;  }
   }
   h3 {
+    display: flex;
+    justify-content: flex-start;
     color: #8d8d8d;
-    margin-top: 20px;
+    margin:20px 0 20px 0;
     font-weight: 400;
     font-size: 2rem;
     font-family: sans-serif;
@@ -97,7 +98,6 @@
     @media (max-width: 960px) {
       font-size: 2rem;
     }
-
     @media (max-width: 548px) {
       font-size: 1.5rem;
     }
@@ -126,6 +126,11 @@
       color: #181818;
       text-decoration: none;
       transition: all 250ms linear;
+    }
+
+    @media (max-width: 960px) {
+      font-size: 1.2rem;
+      margin: 8% auto;
     }
   }
 }
