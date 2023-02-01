@@ -144,7 +144,7 @@ const Home = () => {
               className="job"
             />
           </h2>
-          <h3>
+          <h3 className='aspirations'>
             Frontend Developer / JavaScript Enthusiast / FullStack Aspirer
           </h3>
           <Link to="/contact" className="flat-button">
