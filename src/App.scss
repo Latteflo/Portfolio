@@ -1,8 +1,12 @@
+
+$accent-color: #00ffff;
+
 ::-webkit-scrollbar{
   width: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ffd700;
+  background-color: #00ffff33;
+  ;
 }
 
 @import '~loaders.css/src/animations/semi-circle-spin.scss';
@@ -35,5 +39,5 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #ffd700;
+  color: $accent-color;
 }

@@ -1,3 +1,5 @@
+$accent-color: #00ffff;
+
 .home-page {
   position: absolute;
   top: 0;
@@ -9,21 +11,20 @@
   align-items: center;
   justify-content: center;
 
-
   .text-zone {
     width: 70%;
     transition: all 0.3s ease;
   }
    @media (max-width: 960px) {
   .text-zone {
-    width: 96%;
+    width: 75%;
   }
 }
 
   .special {
     font-size: 12rem;
     font-family: 'laBelleAurore';
-    color: #ffd700;
+    color:$accent-color;
 
     @media (max-width: 960px) {
       font-size: 7rem;
@@ -90,15 +91,12 @@
     color: #8d8d8d;
     margin:20px 0 20px 0;
     font-weight: 400;
-    font-size: 2rem;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
+    transition: all 0.3s ease;
 
     @media (max-width: 960px) {
-      font-size: 2rem;
-    }
-    @media (max-width: 548px) {
       font-size: 1.5rem;
     }
     @media (max-width: 470px) {
@@ -108,19 +106,19 @@
 
   .flat-button {
     text-align: center;
-    color: #ffd700;
+    color: $accent-color;
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 12px 24px;
-    border: 1px solid #ffd700;
+    border: 1px solid $accent-color;
     margin: 4% auto;
     animation: fadeInAnimation 1s 1.8s backwards;
     transition: all 150ms linear;
     &:hover {
-      background: darken(#ffd700, 1.5%);
+      background: darken($accent-color, 1.5%);
       border: 1px solid rgba(#000, 0.05);
       box-shadow: 1px 1px 2px rgba(#fff, 0.2);
       color: #181818;

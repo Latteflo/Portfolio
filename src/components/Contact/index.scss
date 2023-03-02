@@ -1,3 +1,5 @@
+$accent-color: #00ffff;
+
 .contact-page {
   position: absolute;
   top: 0;
@@ -29,7 +31,7 @@
       font-size: 4rem;
       font-size-adjust: inherit;
     .special {
-      color: #ffd700;
+      color: $accent-color;
     }
   }
     .intro {
@@ -49,7 +51,7 @@
         font-size: 1.5rem;
 
         a {
-          color: #ffd700;
+          color: $accent-color;
           font-size: 3rem;
         }
       }
@@ -108,7 +110,7 @@
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #ffd700;
+    background: $accent-color;
     height: 50px;
     font-size: 16px;
     color: #000;
@@ -119,7 +121,7 @@
   textarea {
     min-width: 100%;
     border: 0;
-    background: #ffd700;
+    background: $accent-color;
     height: 50px;
     font-size: 16px;
     color: #000;
@@ -129,12 +131,12 @@
   }
 
   .flat-button {
-    color: #ffd700;
+    color: $accent-color;
     font-size: 11px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid #ffd700;
+    border: 1px solid $accent-color;
     border-radius: 4px;
     background: 0 0;
     text-transform: uppercase;
@@ -143,10 +145,10 @@
 
     &:hover {
       .btn:hover {
-        background: darken(#ffd700, 1.5%);
+        background: #fff;
+        color: $accent-color;
         border: 1px solid rgba(#000, 0.05);
         box-shadow: 1px 1px 2px rgba(#fff, 0.2);
-        color: #181818;
         text-decoration: none;
         transition: all 250ms linear;
       }

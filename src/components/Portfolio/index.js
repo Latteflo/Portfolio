@@ -8,8 +8,8 @@ const Portfolio = () => {
   const [expanded, setExpanded] = useState(null)
 
   useEffect(() => {
-    setLetterClass('text-animate-hover');
-  }, []);
+    setLetterClass('text-animate-hover')
+  }, [])
 
   const handleExpand = (idx) => {
     setExpanded(idx)
@@ -41,39 +41,39 @@ const Portfolio = () => {
                   <button onClick={handleClose} className="close-content">
                     <span>X</span>
                   </button>
-                  <img
-                    className="open-content-image"
-                    src={port.cover}
-                    alt="open-page "
-                  />
-                  <div className="open-content-text">
-                    <h2>{port.title}</h2>
-                    <div className="content">
-                      <p className="technologies">
-                        <span>Build with:</span>
-                        {port.technologies.map((tech) => (
-                          <img
-                            className="tech-icon"
-                            key={tech.name}
-                            src={tech.icon}
-                            alt={tech.name}
-                          />
-                        ))}
-                      </p>
-                      <h4 className="description">{port.description}</h4>
-                  <div className="links">
-                      <button
-                        className="btn"
-                        onClick={() => window.open(port.url)}
-                      >
-                        Live
-                      </button>
-                      <button
-                        className="btn"
-                        onClick={() => window.open(port.urlGithub)}
-                      >
-                        Code
-                      </button>
+                  <div className="open-content-body">
+                    <div className="open-content-image">
+                      <img src={port.cover} alt="open-page " />
+                    </div>
+                    <div className="open-content-text">
+                      <h2>{port.title}</h2>
+                      <div className="content">
+                        <p className="technologies">
+                          <span>Build with:</span>
+                          {port.technologies.map((tech) => (
+                            <img
+                              className="tech-icon"
+                              key={tech.name}
+                              src={tech.icon}
+                              alt={tech.name}
+                            />
+                          ))}
+                        </p>
+                        <h4 className="description">{port.description}</h4>
+                        <div className="links">
+                          <button
+                            className="btn"
+                            onClick={() => window.open(port.url)}
+                          >
+                            Live
+                          </button>
+                          <button
+                            className="btn"
+                            onClick={() => window.open(port.urlGithub)}
+                          >
+                            Code
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>

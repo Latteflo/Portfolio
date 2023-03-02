@@ -1,3 +1,5 @@
+$accent-color: #00ffff;
+
 .text-animate {
   display: inline-block;
   opacity: 0;
@@ -14,8 +16,9 @@
   animation-fill-mode: both;
 
   &:hover {
-    animation: rubberBand 1s;
-    color: #ffd700;
+    animation: rubberBand 2s;
+    animation-fill-mode: both;
+    color: $accent-color ;
   }
 }
 
