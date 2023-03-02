@@ -1,10 +1,23 @@
-Personal Portfolio
-This is a personal portfolio project done using React, SCSS, emailjs and other libraries. 
-The purpose of this project was to create a portfolio that would showcase my work as a web developer. 
+# Personal Portfolio #
+This project is a personal portfolio showcasing my work as a web developer. I have utilized React, SCSS, emailjs, and other modern libraries to build this portfolio.
 
-I used React because it is a powerful JavaScript library that makes creating user interfaces easier. 
-I also used SCSS for the styling of my website because it is a more powerful CSS preprocessor than regular CSS. 
-Lastly, I used emailjs to set up contact forms on my website so that potential employers could easily get in touch with me.
+## Technology Stack ##
+I have used the following technology stack for this project:
+
+### React  :  A powerful JavaScript library for building user interfaces
+### SCSS  : A CSS preprocessor that provides more features than regular CSS
+### emailjs  : A service for sending emails directly from client-side JavaScript code
+## Purpose ##
+The main objective of this project is to present my skills and experience as a web developer in a professional manner. By creating this portfolio, I aim to showcase my proficiency in utilizing various technologies and tools for web development.
+
+## Key Features ##
+This personal portfolio project comes with the following key features:
+
+### Responsive design  : The website is designed to be responsive and optimized for various screen sizes.
+### Portfolio section :  I have included a section that showcases some of my notable projects.
+### Contact form : A contact form has been implemented using emailjs, allowing potential employers to easily get in touch with me.
+## Conclusion ##
+In conclusion, this personal portfolio project reflects my skills and expertise as a web developer. With a robust technology stack and several key features, it serves as an excellent representation of my capabilities in creating visually appealing and user-friendly websites.
 
 ![2023-03-02 21 07 29](https://user-images.githubusercontent.com/92720989/222542378-2dd56f42-43f6-4f5d-b7cd-3091874c5a96.png)
 ![2023-03-02 21 08 012](https://user-images.githubusercontent.com/92720989/222542389-9903625a-1897-4941-ba1a-9075cde26243.png)
