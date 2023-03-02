@@ -125,7 +125,7 @@ $accent-color: #00ffff;
               .close-content {
                 position: fixed;
                 z-index: 4;
-                top: 8%;
+                top: 13%;
                 right: 14%;
                 width: 25px;
                 height: 25px;
@@ -139,6 +139,18 @@ $accent-color: #00ffff;
 
                 @media (max-width: 930px) {
                   top: 15%;
+                  right: 3%;
+                }
+                @media (max-width: 768px) {
+                  top: 30%;
+                  right: 3%;
+                }
+                @media (max-width: 530px) {
+                  top: 33%;
+                  right: 3%;
+                }
+                @media (max-width: 400px) {
+                  top: 20%;
                   right: 3%;
                 }
              
