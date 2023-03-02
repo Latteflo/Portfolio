@@ -6,10 +6,11 @@ I used React because it is a powerful JavaScript library that makes creating use
 I also used SCSS for the styling of my website because it is a more powerful CSS preprocessor than regular CSS. 
 Lastly, I used emailjs to set up contact forms on my website so that potential employers could easily get in touch with me.
 
-![Screenshot 2022-12-02 135824](https://user-images.githubusercontent.com/92720989/205298835-91d60926-4fe9-441f-8f13-324951439ef2.png)
-![Screenshot 2022-12-02 135921](https://user-images.githubusercontent.com/92720989/205298845-30524550-7de8-4861-929b-a1419d8e2e01.png)
-![Screenshot 2022-12-02 135953](https://user-images.githubusercontent.com/92720989/205299855-1ca041a3-7895-4486-81c8-cb8ef2eb395a.png)
-![Screenshot 2022-12-02 140007](https://user-images.githubusercontent.com/92720989/205299278-7c59bfe1-ad38-4df9-806d-58cae87dcc94.png)
+![2023-03-02 21 07 29](https://user-images.githubusercontent.com/92720989/222542378-2dd56f42-43f6-4f5d-b7cd-3091874c5a96.png)
+![2023-03-02 21 08 012](https://user-images.githubusercontent.com/92720989/222542389-9903625a-1897-4941-ba1a-9075cde26243.png)
+![2023-03-02 21 08 43](https://user-images.githubusercontent.com/92720989/222542403-a152e64f-3818-4328-97ec-a8e41055148f.png)
+![2023-03-02 21 09 263](https://user-images.githubusercontent.com/92720989/222542411-e0652c01-57ee-43ce-a7d1-2a497702acb6.png)
+![2023-03-02 21 09 54](https://user-images.githubusercontent.com/92720989/222542423-538aaeb9-0588-4f68-b04e-d8330e413425.png)
 
 
-Live: https://florentina-simion-portfolio.netlify.app/#/
+Live:https://florentina-simion-portfolio.vercel.app/
