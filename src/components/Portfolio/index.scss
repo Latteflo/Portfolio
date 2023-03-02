@@ -125,8 +125,8 @@ $accent-color: #00ffff;
               .close-content {
                 position: fixed;
                 z-index: 4;
-                top: 13%;
-                right: 14%;
+                top: 9%;
+                right: 15%;
                 width: 25px;
                 height: 25px;
                 border-radius: 50%;
@@ -138,19 +138,27 @@ $accent-color: #00ffff;
                 background-color: #959393;
 
                 @media (max-width: 930px) {
-                  top: 15%;
+                  top: 16%;
                   right: 3%;
                 }
                 @media (max-width: 768px) {
-                  top: 30%;
+                  top: 17%;
+                  right: 3%;
+                }
+                @media (max-width: 700px) {
+                  top: 19%;
+                  right: 3%;
+                }
+                @media (max-width: 600px) {
+                  top: 22%;
                   right: 3%;
                 }
                 @media (max-width: 530px) {
-                  top: 33%;
+                  top: 25%;
                   right: 3%;
                 }
                 @media (max-width: 400px) {
-                  top: 20%;
+                  top: 25%;
                   right: 3%;
                 }
              
