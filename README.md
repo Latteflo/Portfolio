@@ -7,6 +7,9 @@ I have used the following technology stack for this project:
 ### React  :  A powerful JavaScript library for building user interfaces
 ### SCSS  : A CSS preprocessor that provides more features than regular CSS
 ### emailjs  : A service for sending emails directly from client-side JavaScript code
+### ThreeJsToys :A JavaScript library used for creating and animating 3D graphics in a web browser.
+With the inclusion of Three.js, I was able to incorporate fun and interactive 3D elements into my portfolio. This technology stack allowed me to build a dynamic and visually appealing website that highlights my skills and experience as a web developer.
+
 ## Purpose ##
 The main objective of this project is to present my skills and experience as a web developer in a professional manner. By creating this portfolio, I aim to showcase my proficiency in utilizing various technologies and tools for web development.
 
