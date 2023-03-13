@@ -70,7 +70,7 @@ const About = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.linkedin.com/in/florentina-simion-a97bba73/"
+                  href="https://www.linkedin.com/in/flori-simion-a97bba73/"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
