@@ -1,13 +1,15 @@
 # Personal Portfolio #
-This project is a personal portfolio showcasing my work as a web developer. I have utilized React, SCSS, emailjs, and other modern libraries to build this portfolio.
+This project is a personal portfolio showcasing my work as a web developer. 
 
 ## Technology Stack ##
 I have used the following technology stack for this project:
 
-### React  :  A powerful JavaScript library for building user interfaces
-### SCSS  : A CSS preprocessor that provides more features than regular CSS
-### emailjs  : A service for sending emails directly from client-side JavaScript code
-### ThreeJsToys :A JavaScript library used for creating and animating 3D graphics in a web browser.
+ <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ab4c3c731a174a63df861f7b118d6c8a6c52040a021a552628db877bd518fe84/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656163742d2532333230323332612e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d253233363144414642"><img src="https://camo.githubusercontent.com/ab4c3c731a174a63df861f7b118d6c8a6c52040a021a552628db877bd518fe84/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656163742d2532333230323332612e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d253233363144414642" alt="React" data-canonical-src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB" style="max-width: 100%;"></a><a target="_blank" rel="noopener noreferrer nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" alt="JavaScript" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://sass-lang.com/"><img src="https://img.shields.io/badge/SCSS-%23CC6699.svg?style=for-the-badge&amp;logo=sass&amp;logoColor=white" alt="SCSS" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://www.emailjs.com/"><img src="https://img.shields.io/badge/emailjs-%23337AB7.svg?style=for-the-badge&amp;logo=emailjs&amp;logoColor=white" alt="emailjs" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://threejstoys.netlify.app/"><img src="https://img.shields.io/badge/ThreeJsToys-%23F5F5F5.svg?style=for-the-badge&amp;logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAF0lEQVQYV2NkQGD4z8DAwMDCxgGoAAH2QABf8WmX9AAAAAElFTkSuQmCC" alt="ThreeJsToys" style="max-width:100%;"></a>
+
+
 With the inclusion of Three.js, I was able to incorporate fun and interactive 3D elements into my portfolio. This technology stack allowed me to build a dynamic and visually appealing website that highlights my skills and experience as a web developer.
 
 ## Purpose ##
@@ -16,9 +18,12 @@ The main objective of this project is to present my skills and experience as a w
 ## Key Features ##
 This personal portfolio project comes with the following key features:
 
-### Responsive design  : The website is designed to be responsive and optimized for various screen sizes.
-### Portfolio section :  I have included a section that showcases some of my notable projects.
-### Contact form : A contact form has been implemented using emailjs, allowing potential employers to easily get in touch with me.
+### Responsive design  : 
+The website is designed to be responsive and optimized for various screen sizes.
+### Portfolio section :  
+I have included a section that showcases some of my notable projects.
+### Contact form : 
+A contact form has been implemented using emailjs, allowing potential employers to easily get in touch with me.
 ## Conclusion ##
 In conclusion, this personal portfolio project reflects my skills and expertise as a web developer. With a robust technology stack and several key features, it serves as an excellent representation of my capabilities in creating visually appealing and user-friendly websites.
 
