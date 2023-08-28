@@ -62,7 +62,7 @@ const Contact = () => {
                 <FontAwesomeIcon icon={faWhatsapp} />
               </a>
 
-              <a href="https://www.linkedin.com/in/flori-simion-a97bba73/">
+              <a href="https://www.linkedin.com/in/florentina-s-a97bba73//">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a href="https://github.com/Latteflo">
