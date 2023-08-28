@@ -33,32 +33,20 @@ const About = () => {
             </h2>
             <p>
               {' '}
-              I am a front end developer based in Belgium, looking for an IT
-              company where I can work with the latest technologies on diverse
-              projects. With a background in aviation, I have gained
-              problem-solving skills and the ability to think outside the box.
-              My attention to detail is also an asset when working on web
-              projects.
+              Based in Belgium, I am a full-stack developer with a special focus on front-end technologies. Currently honing my skills at BeCode, I am eager to work with cutting-edge technologies across diverse projects. With a unique background in aviation, I offer unparalleled problem-solving abilities and creative thinking, skills that I have further refined in the tech world.
             </p>
             <p>
               I am quietly confident, naturally curious, and a team-player who
-              is continuously improving my skills. I started learning to code in
-              May 2022 and have been dedicated to growing as a developer. I am a
-              fast learner and always up for new challenges.{' '}
+              is continuously improving my skills. I have been deeply committed to continuous learning and skill improvement. I began my coding journey in May 2022 and have since expanded my expertise to include both front-end and back-end development.. 
             </p>
             <p>
-              I am excited to bring my passion for technology and my desire to
-              learn and grow to a new company. I believe that with my
-              combination of technical skills and soft skills, I can make a
-              positive contribution to any team and project. I am eager to find
-              a role where I can use my skills to make an impact and continue to
-              develop as a professional.
+              Passionate about technology, I am looking to join a dynamic IT company where I can contribute to innovative projects and grow professionally. With a balanced blend of technical and soft skills, I am ready and eager to make a meaningful impact in an agile, innovation-driven environment.
             </p>
           </div>
           <div className="bottom-zone">
             <div className="reach">
               <a
-                href="https://drive.google.com/file/d/10APRQA5lvVN_A5G9fyO_Mr05fSw9kFzH/view?usp=share_link"
+                href="https://drive.google.com/file/d/1WnIGHtUzQMJQcnCNBp1Wx5kPFCWiNtEm/view?usp=sharing"
                 download
                 className="flat-button"
                 rel='noreferrer'
@@ -70,7 +58,7 @@ const About = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.linkedin.com/in/flori-simion-a97bba73/"
+                  href="https://www.linkedin.com/in/florentina-s-a97bba73/"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
