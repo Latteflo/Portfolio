@@ -145,7 +145,7 @@ const Home = () => {
             />
           </h2>
           <h3 className='aspirations'>
-            Frontend Developer / JavaScript Enthusiast / FullStack Aspirer
+            Frontend Developer / JavaScript and React Enthusiast / Skilled Full-Stack Craftswoman
           </h3>
           <Link to="/contact" className="flat-button">
             CONTACT ME
