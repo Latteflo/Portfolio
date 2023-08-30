@@ -1,43 +1,33 @@
+$accent-color: #13ffe0;
 
-$accent-color: #00ffff;
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #00ffff33;
-  ;
+  background-color: #ff003733;
 }
 
-@import '~loaders.css/src/animations/semi-circle-spin.scss';
 
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('/assets/fonts/helvetica-neu.ttf') format (ttf);
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/helvetica-neu.ttf") format (ttf);
 }
 @font-face {
-  font-family: 'Cinzel', serif;
-  src: url('/assets/fonts/Cinzel-VariableFont_wght.ttf') format (ttf);
-}
-
-@font-face {
-  font-family: 'La Belle Aurore';
-  src: url('/assets/fonts/LaBelleAurore.woff2') format (woff2);
+  font-family: "Cinzel", serif;
+  src: url("/assets/fonts/Cinzel-VariableFont_wght.ttf") format (ttf);
 }
 
 @font-face {
-  font-family: 'Coolvetica';
-  src: url('/assets/fonts/CoolveticaRg-Regular.woff2') format (woff2);
+  font-family: "La Belle Aurore";
+  src: url("/assets/fonts/LaBelleAurore.woff2") format (woff2);
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("/assets/fonts/CoolveticaRg-Regular.woff2") format (woff2);
 }
 
 input,
 textarea {
-  font-family: 'Helvetica Neue', sans-serif;
-}
-
-.loader:active{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: $accent-color;
+  font-family: "Helvetica Neue", sans-serif;
 }

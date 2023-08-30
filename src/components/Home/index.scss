@@ -1,4 +1,4 @@
-$accent-color: #00ffff;
+$accent-color: #13ffe0;
 
 .home-page {
   position: absolute;
@@ -43,6 +43,7 @@ $accent-color: #00ffff;
 
   h1 {
     color: #fff;
+    display: inline-block;
     font-size: 9rem;
     margin: 0;
     font-family: 'laBelleAurore';
@@ -95,6 +96,7 @@ $accent-color: #00ffff;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
     transition: all 0.3s ease;
+    padding-bottom: 3%;
 
     @media (max-width: 960px) {
       font-size: 1.5rem;

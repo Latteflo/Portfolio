@@ -1,0 +1,44 @@
+$accent-color: #13ffe0;
+$white: #fff;
+
+.content-header {
+  width: 75%;
+  height: max-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 930px) {
+    padding-top: 3%;
+    width: 80%;
+  }
+
+  .text-zone {
+    h2.page-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: $white;
+      font-size: 6rem;
+      transition: color 0.4s ease;
+
+      .special {
+        color: $accent-color;
+        transition: color 0.4s ease;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    .page-description {
+      color: $white;
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      transition: color 0.4s ease;
+    }
+  }
+}

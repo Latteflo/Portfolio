@@ -1,5 +1,4 @@
-
-$accent-color: #00ffff;
+$accent-color: #13ffe0;
 
 .about-page {
   position: absolute;
@@ -24,21 +23,21 @@ $accent-color: #00ffff;
     }
 
     .text-zone {
-        margin-top: 4rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-    
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+
       h2 {
         font-size: 7rem;
-        font-family: 'Cinzel';
+        font-family: "Cinzel";
         color: #fff;
         font-weight: 400;
-      }
-      @media (max-width: 930px) {
-        h2 {
+        margin: 0;
+
+        @media (max-width: 930px) {
           margin-top: 14%;
           font-size: 6rem;
         }
@@ -51,6 +50,8 @@ $accent-color: #00ffff;
         font-weight: 300;
         max-width: fit-content;
         animation: pulse 1s;
+        text-indent: 15px;
+        padding: auto;
         &:nth-of-type(1) {
           animation-delay: 1.1s;
         }
@@ -65,6 +66,7 @@ $accent-color: #00ffff;
         }
       }
     }
+
     .bottom-zone {
       display: flex;
       flex-direction: row;
@@ -72,6 +74,7 @@ $accent-color: #00ffff;
       align-items: center;
       margin: 0 auto;
       width: 100%;
+
       @media (max-width: 930px) {
         flex-direction: column;
       }
@@ -84,49 +87,49 @@ $accent-color: #00ffff;
         margin: 0 auto;
         width: 100%;
 
-      .flat-button {
-        text-align: center;
-        color: $accent-color;
-        font-size: 1.5rem;
-        font-weight: 400;
-        letter-spacing: 4px;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 12px 24px;
-        border: 1px solid $accent-color;
-        margin: 4% auto;
-        animation: fadeInAnimation 1s 1.8s backwards;
-        transition: all 150ms linear;
-        &:hover {
-          background: darken($accent-color, 1.5%);
-          border: 1px solid rgba(#000, 0.05);
-          box-shadow: 1px 1px 2px rgba(#fff, 0.2);
-          color: #181818;
-          text-decoration: none;
-          transition: all 250ms linear;
-        }
-      }
-      .social-links-about {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 100%;
-        a {
-          margin: 0 10px;
-          color: #fff;
-          font-size: 22px;
+        .flat-button {
+          text-align: center;
+          color: $accent-color;
+          font-size: 1.5rem;
+          font-weight: 400;
           letter-spacing: 4px;
           font-family: sans-serif;
           text-decoration: none;
-          padding: 10px 18px;
+          padding: 12px 24px;
+          border: 1px solid $accent-color;
+          margin: 4% auto;
+          animation: fadeInAnimation 1s 1.8s backwards;
+          transition: all 150ms linear;
+          &:hover {
+            background: darken($accent-color, 1.5%);
+            border: 1px solid rgba(#000, 0.05);
+            box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+            color: #181818;
+            text-decoration: none;
+            transition: all 250ms linear;
+          }
         }
-        a:hover {
-          color: $accent-color;
-          scale: 1.2;
+        .social-links-about {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          width: 100%;
+          a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 22px;
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            text-decoration: none;
+            padding: 10px 18px;
+          }
+          a:hover {
+            color: $accent-color;
+            scale: 1.2;
+          }
         }
-       }
-    }
+      }
       .wordcloud {
         width: 100%;
         height: 100%;

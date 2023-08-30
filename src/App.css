@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 0, 55, 0.2);
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/helvetica-neu.ttf") format ttf;
+}
+@font-face {
+  font-family: "Cinzel", serif;
+  src: url("/assets/fonts/Cinzel-VariableFont_wght.ttf") format ttf;
+}
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("/assets/fonts/LaBelleAurore.woff2") format woff2;
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: url("/assets/fonts/CoolveticaRg-Regular.woff2") format woff2;
+}
+input,
+textarea {
+  font-family: "Helvetica Neue", sans-serif;
+}/*# sourceMappingURL=App.css.map */

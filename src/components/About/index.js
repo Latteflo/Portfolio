@@ -33,14 +33,26 @@ const About = () => {
             </h2>
             <p>
               {' '}
-              Based in Belgium, I am a full-stack developer with a special focus on front-end technologies. Currently honing my skills at BeCode, I am eager to work with cutting-edge technologies across diverse projects. With a unique background in aviation, I offer unparalleled problem-solving abilities and creative thinking, skills that I have further refined in the tech world.
+              Based in Belgium, I am a full-stack developer with a special focus
+              on front-end technologies. Currently honing my skills at BeCode, I
+              am eager to work with cutting-edge technologies across diverse
+              projects. With a unique background in aviation, I offer
+              unparalleled problem-solving abilities and creative thinking,
+              skills that I have further refined in the tech world.
             </p>
             <p>
               I am quietly confident, naturally curious, and a team-player who
-              is continuously improving my skills. I have been deeply committed to continuous learning and skill improvement. I began my coding journey in May 2022 and have since expanded my expertise to include both front-end and back-end development.. 
+              is continuously improving my skills. I have been deeply committed
+              to continuous learning and skill improvement. I began my coding
+              journey in May 2022 and have since expanded my expertise to
+              include both front-end and back-end development..
             </p>
             <p>
-              Passionate about technology, I am looking to join a dynamic IT company where I can contribute to innovative projects and grow professionally. With a balanced blend of technical and soft skills, I am ready and eager to make a meaningful impact in an agile, innovation-driven environment.
+              Passionate about technology, I am looking to join a dynamic IT
+              company where I can contribute to innovative projects and grow
+              professionally. With a balanced blend of technical and soft
+              skills, I am ready and eager to make a meaningful impact in an
+              agile, innovation-driven environment.
             </p>
           </div>
           <div className="bottom-zone">
@@ -49,7 +61,7 @@ const About = () => {
                 href="https://drive.google.com/file/d/1WnIGHtUzQMJQcnCNBp1Wx5kPFCWiNtEm/view?usp=sharing"
                 download
                 className="flat-button"
-                rel='noreferrer'
+                rel="noreferrer"
                 target="_blank"
               >
                 My Resume <FontAwesomeIcon icon={faDownload} />

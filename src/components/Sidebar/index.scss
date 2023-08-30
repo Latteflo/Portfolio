@@ -1,4 +1,4 @@
-$accent-color: #00ffff;
+$accent-color: #13ffe0;
 
 .nav-bar {
   background-color: #181818;
@@ -23,7 +23,7 @@ $accent-color: #00ffff;
         display: block;
         width: 50px;     
         border-radius: 50%;
-        border: 2px solid #00ffff33;
+        border: 2px solid $accent-color;
 
       }
       img:hover {

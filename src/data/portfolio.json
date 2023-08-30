@@ -4,18 +4,13 @@
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/299/original/Dictionary.png?1655286192",
       "title": "Dictionary",
       "technologies": [
-        { "icon": "https://cdn.svgporn.com/logos/react.svg", 
-          "name": "React" },
+        { "icon": "https://cdn.svgporn.com/logos/react.svg", "name": "React" },
         {
           "icon": "https://cdn.svgporn.com/logos/javascript.svg",
           "name": "JavaScript"
         },
-        { "icon": "https://cdn.svgporn.com/logos/html-5.svg",
-          "name": "HTML" 
-        },
-        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", 
-          "name": "CSS"
-         }
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
       ],
       "description": "A dictionary app that allows you to search for words and see their definitions. It is built with React and the Merriam-Webster dictionary API and Pexels API.",
       "url": "https://dictionary-project-flo.netlify.app/",
@@ -86,7 +81,7 @@
       ],
       "description": "This project was created as an entry for the SHECODES.io contest. It is a tribute to UN Women and their work to empower women and girls around the world.It aims to highlight the important issues that UN Women works on and encourage visitors to get involved and support their efforts.",
       "url": "https://un-women-latteflo.vercel.app/",
-      "urlGithub":"https://github.com/Latteflo/UN-Women"
+      "urlGithub": "https://github.com/Latteflo/UN-Women"
     },
     {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/278/original/Jackson_W.jpeg?1675207573",
@@ -94,13 +89,105 @@
       "technologies": [
         { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
         { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" },
-        { "icon": "https://cdn.svgporn.com/logos/greensock.svg", "name": "Greensock" },
-        { "icon": "https://cdn.svgporn.com/logos/threejs.svg", "name": "Three.js" }
+        {
+          "icon": "https://cdn.svgporn.com/logos/greensock.svg",
+          "name": "Greensock"
+        },
+        {
+          "icon": "https://cdn.svgporn.com/logos/threejs.svg",
+          "name": "Three.js"
+        }
       ],
       "description": "This project is a tribute to the talented singer Jackson Wang. The website aims to showcase his musical career, achievements and style. Built using HTML, CSS, Greensock and Three.js, it offers a unique and interactive experience for fans of Jackson Wang.",
       "url": "https://artist-page-jackson-wang.vercel.app/",
-      "urlGithub":"https://github.com/Latteflo/Artist-page-Jackson-Wang"
+      "urlGithub": "https://github.com/Latteflo/Artist-page-Jackson-Wang"
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/217/original/todoApp.png?1693432001",
+      "title": "Glassmorphism Todo App",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/react.svg", "name": "React" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        },
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
+      ],
+      "description": "Elevate your task management experience with this sleek Todo App. Crafted with React and adorned with the contemporary Glassmorphism design, it offers a modern and intuitive user interface. Features include Glassmorphism Aesthetics, task prioritization, persistent memory, interactive UX, and full responsiveness.",
+      "url": "https://flo-s-todo.netlify.app/",
+      "urlGithub": "https://github.com/Latteflo/BeCode-ToDo-App"
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/218/original/Personal_V-Card.png?1693432074",
+      "title": "My V-Card Project",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" }
+      ],
+      "description": "This repository contains the code for a personal v-card project. This is a small web project consisting of HTML and CSS, created as a task for the BeCode coding bootcamp.",
+      "url": "https://latteflo.github.io/v-card/",
+      "urlGithub": "https://github.com/Latteflo/v-card"
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/219/original/weather-becode.gif?1693432177",
+      "title": "Weather Application",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        }
+      ],
+      "description": "This project is a weather application that allows users to search for current weather data for any city, as well as retrieve weather data based on their current geolocation. Features include search by city name, auto-location detection, display of various weather data, dynamic weather icons, a history of recent searches, and the ability to clear search history. It uses the OpenWeatherMap and OpenCage Geocoder APIs.",
+      "url": "https://becode-weather-app-fs.vercel.app/",
+      "urlGithub": "https://github.com/Latteflo/BeCode-Weather-App-Vite"
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/220/original/amaezing.png?1693432220",
+      "title": "Amezeing Maze Game",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        }
+      ],
+      "description": "Amezeing is a simple, yet engaging, maze game with multiple levels. The game is implemented using JavaScript, HTML, and CSS. It starts with the player at the 'Start' position, and the goal is to navigate through the maze to reach the 'Treasure' position. The game features 10 levels, each with a different maze configuration.",
+      "url": "https://amezeing.netlify.app/",
+      "urlGithub": "https://github.com/Latteflo/Amezeing"
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/222/original/movieCollection.png?1693432451",
+      "title": "Ghilbi Movies Collection",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        }
+      ],
+      "description": "Ghilbi Movies Collection is a dynamic, playful, and interactive web-based collection of Ghilbi Movies. Built as part of BeCode training, the project focuses on JavaScript consolidation concepts. The interface allows seamless navigation and interaction, providing a detailed view of each movie in the collection.",
+      "url": "https://ghibli-movies-collection-sf.netlify.app/",
+      "urlGithub": "https://github.com/Latteflo/Ghilbi-Movies-Collection"
+    },
+    {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/221/original/preview.png?1693432277",
+      "title": "Dark Kitchen Online Delivery - Fergelishos",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        }
+      ],
+      "description": "A dynamic single-page restaurant menu application designed for a Dark Kitchen online delivery service. It includes features such as responsive design, dish listing, categorization, and a shopping cart. Developed as part of BeCode challenges by a team including Oana, Louis, and Florentina.",
+      "url": "https://fergalicious.netlify.app/",
+      "urlGithub": "https://github.com/Latteflo/the_best_Dark_Kitchen_ever"
     }
-    
   ]
 }

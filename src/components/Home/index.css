@@ -1,0 +1,152 @@
+.home-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-page .text-zone {
+  width: 70%;
+  transition: all 0.3s ease;
+}
+@media (max-width: 960px) {
+  .home-page .text-zone {
+    width: 75%;
+  }
+}
+.home-page .special {
+  font-size: 12rem;
+  font-family: "laBelleAurore";
+  color: #e90948;
+}
+@media (max-width: 960px) {
+  .home-page .special {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 548px) {
+  .home-page .special {
+    font-size: 6.5rem;
+  }
+}
+@media (max-width: 470px) {
+  .home-page .special {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 380px) {
+  .home-page .special {
+    font-size: 5rem;
+  }
+}
+.home-page h1 {
+  color: #fff;
+  display: inline-block;
+  font-size: 9rem;
+  margin: 0;
+  font-family: "laBelleAurore";
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+@media (max-width: 960px) {
+  .home-page h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 548px) {
+  .home-page h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 470px) {
+  .home-page h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 380px) {
+  .home-page h1 {
+    font-size: 3rem;
+  }
+}
+.home-page h2 {
+  color: #fff;
+  font-size: 7rem;
+  margin: 0;
+  font-family: "laBelleAurore";
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+@media (max-width: 960px) {
+  .home-page h2 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 548px) {
+  .home-page h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 470px) {
+  .home-page h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 380px) {
+  .home-page h2 {
+    font-size: 2.6rem;
+  }
+}
+.home-page h3 {
+  display: flex;
+  justify-content: flex-start;
+  color: #8d8d8d;
+  margin: 20px 0 20px 0;
+  font-weight: 400;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  animation: fadeIn 1s 1.8s backwards;
+  transition: all 0.3s ease;
+  padding-bottom: 3%;
+}
+@media (max-width: 960px) {
+  .home-page h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 470px) {
+  .home-page h3 {
+    font-size: 1rem;
+  }
+}
+.home-page .flat-button {
+  text-align: center;
+  color: #e90948;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 1px solid #e90948;
+  margin: 4% auto;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  transition: all 150ms linear;
+}
+.home-page .flat-button:hover {
+  background: #e20946;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #181818;
+  text-decoration: none;
+  transition: all 250ms linear;
+}
+@media (max-width: 960px) {
+  .home-page .flat-button {
+    font-size: 1.2rem;
+    margin: 8% auto;
+  }
+}/*# sourceMappingURL=index.css.map */

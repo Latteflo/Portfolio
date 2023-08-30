@@ -1,14 +1,24 @@
 import './App.scss'
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Layout from './/components/Layouts'
+import Layout from './components/Layouts'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import Loader from 'react-loaders'
+import { useState, useEffect } from 'react'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 3000)
+    return () => clearTimeout(timer)
+  }, [])
   return (
     <>
       <Routes>
