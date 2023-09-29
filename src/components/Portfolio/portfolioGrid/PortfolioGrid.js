@@ -1,6 +1,6 @@
 import React from 'react'
 import './PortfolioGrid.scss'
-import PortfolioItem from '../portfolioItem/PortfolioItem'
+import PortfolioItem from './portfolioItem/PortfolioItem'
 const PortfolioGrid = ({
   portfolioData,
   expanded,

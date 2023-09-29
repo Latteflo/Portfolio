@@ -1,6 +1,6 @@
 import React from 'react';
 import './PortfolioItem.scss';
-import Modal from '../portfolioModal/PortfolioModal';
+import Modal from './portfolioModal/PortfolioModal';
 
 const PortfolioItem = ({ port, idx, expanded, handleExpand, handleClose, showModal }) => (
   <div
