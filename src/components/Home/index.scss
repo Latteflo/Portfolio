@@ -94,13 +94,11 @@ $accent-color: #13ffe0;
     font-weight: 400;
     font-family: sans-serif;
     letter-spacing: 3px;
-    animation: fadeIn 1s 1.8s backwards;
+    animation: fadeIn 1s 0.8s backwards;
     transition: all 0.3s ease;
     padding-bottom: 3%;
+    font-size: 1.5rem;
 
-    @media (max-width: 960px) {
-      font-size: 1.5rem;
-    }
     @media (max-width: 470px) {
       font-size: 1rem;
     }

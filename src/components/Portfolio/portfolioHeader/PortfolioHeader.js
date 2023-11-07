@@ -1,6 +1,6 @@
-import React from 'react';
-import AnimatedLetters from '../../AnimatedLetters';
-import './PortfolioHeader.scss';
+import React from 'react'
+import AnimatedLetters from '../../AnimatedLetters'
+import './PortfolioHeader.scss'
 
 const PortfolioHeader = ({ letterClass }) => {
   return (
@@ -15,12 +15,12 @@ const PortfolioHeader = ({ letterClass }) => {
           />
         </h2>
         <p className="page-description">
-          Here you will find a selection of my recent projects that showcase
-          my skills and experience in various areas of design and development.
+          Here you will find a selection of my recent projects that showcase my
+          skills and experience in various areas of design and development.
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PortfolioHeader;
+export default PortfolioHeader

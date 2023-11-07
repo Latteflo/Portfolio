@@ -145,21 +145,6 @@
       "urlGithub": "https://github.com/Latteflo/BeCode-Weather-App-Vite"
     },
     {
-      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/220/original/amaezing.png?1693432220",
-      "title": "Amezeing Maze Game",
-      "technologies": [
-        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
-        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" },
-        {
-          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
-          "name": "JavaScript"
-        }
-      ],
-      "description": "Amezeing is a simple, yet engaging, maze game with multiple levels. The game is implemented using JavaScript, HTML, and CSS. It starts with the player at the 'Start' position, and the goal is to navigate through the maze to reach the 'Treasure' position. The game features 10 levels, each with a different maze configuration.",
-      "url": "https://amezeing.netlify.app/",
-      "urlGithub": "https://github.com/Latteflo/Amezeing"
-    },
-    {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/222/original/movieCollection.png?1693432451",
       "title": "Ghilbi Movies Collection",
       "technologies": [

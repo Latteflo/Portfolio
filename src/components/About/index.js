@@ -58,7 +58,7 @@ const About = () => {
           <div className="bottom-zone">
             <div className="reach">
               <a
-                href="https://drive.google.com/file/d/1WnIGHtUzQMJQcnCNBp1Wx5kPFCWiNtEm/view?usp=sharing"
+                href="https://drive.google.com/file/d/1nGWorHLkJXewLHx7MuSScAuNpFfbGQkE/view?usp=sharing"
                 download
                 className="flat-button"
                 rel="noreferrer"

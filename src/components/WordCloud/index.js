@@ -26,6 +26,11 @@ const text = [
   'Chrome',
   'Postman',
   "DBeaver",
+  'Heroku',
+  'Firebase',
+  'Figma',
+  'Python',
+  'Django',
 ]
 const options = {
   radius: 170,

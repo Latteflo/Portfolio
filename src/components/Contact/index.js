@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MapContainer, TileLayer, Marker } from 'react-leaflet'
+//import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -118,12 +118,12 @@ const Contact = () => {
                 </ul>
               </form>
             </div>
-            <div className="map-wrap">
+            {/*<div className="map-wrap">
               <MapContainer center={[50.8466, 4.3528]} zoom={13}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 <Marker position={[50.8466, 4.3528]}></Marker>
               </MapContainer>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>

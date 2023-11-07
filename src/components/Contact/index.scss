@@ -22,24 +22,29 @@ $accent-color: #13ffe0;
     @media (max-width: 930px) {
       width: 90%;
       margin-top: 14%;
-        }
-    .title{
+    }
+
+    .title {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       color: #fff;
-      font-size: 4rem;
       font-size-adjust: inherit;
-    .special {
-      color: $accent-color;
+      font-size: 7rem;
+      font-family: "Cinzel";
+      font-weight: 400;
+      margin: 5rem;
+
+      @media (max-width: 930px) {
+        margin-bottom: 5rem;
+        font-size: 6rem;
+      }
+      .special {
+        color: $accent-color;
+      }
     }
-  }
     .intro {
       width: 100%;
-      h1 {
-        color: #fff;
-        font-size: 4.5rem;
-      }
       .socials {
         display: flex;
         flex-direction: row;
@@ -106,8 +111,8 @@ $accent-color: #13ffe0;
     }
   }
 
-  input[type='text'],
-  input[type='email'] {
+  input[type="text"],
+  input[type="email"] {
     width: 100%;
     border: 0;
     background: $accent-color;
