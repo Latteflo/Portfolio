@@ -34,11 +34,16 @@ $accent-color: #13ffe0;
       font-family: "Cinzel";
       font-weight: 400;
       margin: 5rem;
-
-      @media (max-width: 930px) {
+      
+  @media (max-width: 930px) {
         margin-bottom: 5rem;
         font-size: 6rem;
       }
+      @media (max-width: 450px) {
+        margin: 2rem;
+        font-size: 4rem;
+      }
+    
       .special {
         color: $accent-color;
       }
