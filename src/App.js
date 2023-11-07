@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import Loader from 'react-loaders'
 import { useState, useEffect } from 'react'
+import './App.scss'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -33,7 +34,7 @@ function App() {
           />
         </Route>
       </Routes>
-      <Loader type="semi-circle-spin" active />
+      {isLoading && <Loader type="semi-circle-spin" className='loader' active />}
     </>
   )
 }

@@ -32,20 +32,18 @@ const About = () => {
               />
             </h2>
             <p>
-              {' '}
-              Based in Belgium, I am a full-stack developer with a special focus
-              on front-end technologies. Currently honing my skills at BeCode, I
-              am eager to work with cutting-edge technologies across diverse
-              projects. With a unique background in aviation, I offer
-              unparalleled problem-solving abilities and creative thinking,
-              skills that I have further refined in the tech world.
+              In the heart of Belgium's vibrant tech scene, my career as a
+              full-stack developer is rapidly advancing. At the intersection of
+              disciplined aviation expertise and the dynamic realm of software
+              development, I have found my passion for crafting user-centric
+              solutions. Currently immersed in the immersive learning
+              environment of BeCode, I am sharpening my skill set to embrace the
+              challenges and opportunities of the ever-evolving digital
+              landscape.
             </p>
             <p>
               I am quietly confident, naturally curious, and a team-player who
-              is continuously improving my skills. I have been deeply committed
-              to continuous learning and skill improvement. I began my coding
-              journey in May 2022 and have since expanded my expertise to
-              include both front-end and back-end development..
+              is continuously improving my skills. 
             </p>
             <p>
               Passionate about technology, I am looking to join a dynamic IT

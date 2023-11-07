@@ -4,10 +4,8 @@ $accent-color: #13ffe0;
   width: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ff003733;
+  background-color: #00a2ff33;
 }
-
-
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -31,4 +29,12 @@ $accent-color: #13ffe0;
 input,
 textarea {
   font-family: "Helvetica Neue", sans-serif;
+}
+
+.loader {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $accent-color;
 }
