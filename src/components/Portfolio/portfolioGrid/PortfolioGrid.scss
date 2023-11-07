@@ -8,6 +8,7 @@
 @media screen and (max-width: 1260px) {
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 6rem;  
     margin: 0 auto;
   }
 }
