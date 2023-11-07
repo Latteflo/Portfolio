@@ -12,4 +12,9 @@
 .portfolio-data {
     width: 80%;
     margin: 0 auto;
+
+    @media (max-width: 930px) {
+        width: 100%;
+        padding: 0;
+    }
 }
