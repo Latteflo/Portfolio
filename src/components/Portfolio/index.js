@@ -1,28 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import PortfolioData from '../../data/portfolio.json';
-import PortfolioHeader from './portfolioHeader/PortfolioHeader';
-import PortfolioGrid from './portfolioGrid/PortfolioGrid';
-import PortfolioModal from './portfolioModal/PortfolioModal';
-import './Portfolio.scss';
+import React, { useState, useEffect } from 'react'
+import PortfolioData from '../../data/portfolio.json'
+import PortfolioHeader from './portfolioHeader/PortfolioHeader'
+import PortfolioGrid from './portfolioGrid/PortfolioGrid'
+import PortfolioModal from './portfolioModal/PortfolioModal'
+import './Portfolio.scss'
 
 const Portfolio = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
-  const [expanded, setExpanded] = useState(null);
-  const [showModal, setShowModal] = useState(false);
+  const [letterClass, setLetterClass] = useState('text-animate')
+  const [expanded, setExpanded] = useState(null)
+  const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
-    setLetterClass('text-animate-hover');
-  }, []);
+    setLetterClass('text-animate-hover')
+  }, [])
 
   const handleExpand = (idx) => {
-    setExpanded(idx);
-    setShowModal(true);
-  };
+    setExpanded(idx)
+    setShowModal(true)
+  }
 
   const handleClose = () => {
-    setExpanded(null);
-    setShowModal(false);
-  };
+    setExpanded(null)
+    setShowModal(false)
+  }
+  
+  const reversedPortfolioData = [...PortfolioData.portfolio].reverse();
 
   return (
     <>
@@ -30,16 +32,16 @@ const Portfolio = () => {
         <PortfolioHeader letterClass={letterClass} />
         <div className="portfolio-data">
           <PortfolioGrid
-            portfolioData={PortfolioData.portfolio}
+            portfolioData={reversedPortfolioData}
             expanded={expanded}
             handleExpand={handleExpand}
             handleClose={handleClose}
             showModal={showModal}
           />
         </div>
-        {showModal && (
+        {showModal && expanded != null && (
           <PortfolioModal
-            port={PortfolioData.portfolio[expanded]}
+            port={reversedPortfolioData[expanded]}
             handleClose={handleClose}
           />
         )}

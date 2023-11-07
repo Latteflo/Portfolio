@@ -32,25 +32,27 @@ const About = () => {
               />
             </h2>
             <p>
-              In the heart of Belgium's vibrant tech scene, my career as a
-              full-stack developer is rapidly advancing. At the intersection of
-              disciplined aviation expertise and the dynamic realm of software
-              development, I have found my passion for crafting user-centric
-              solutions. Currently immersed in the immersive learning
-              environment of BeCode, I am sharpening my skill set to embrace the
-              challenges and opportunities of the ever-evolving digital
-              landscape.
+              In the heart of Belgium's tech community, I'm building a bridge
+              between the structured world of aviation and the innovative space
+              of full-stack development. My background in flying has taught me
+              precision and adaptability, traits I now apply to coding. Whether
+              it's front-end design or back-end logic, I bring the same
+              attention to detail. Currently active in the collaborative &
+              immersive learning environment of BeCode, I am sharpening my skill
+              set to embrace the challenges and opportunities of the
+              ever-evolving digital landscape.
             </p>
             <p>
               I am quietly confident, naturally curious, and a team-player who
-              is continuously improving my skills. 
+              is continuously improving my skills.
             </p>
             <p>
-              Passionate about technology, I am looking to join a dynamic IT
-              company where I can contribute to innovative projects and grow
-              professionally. With a balanced blend of technical and soft
-              skills, I am ready and eager to make a meaningful impact in an
-              agile, innovation-driven environment.
+              I have found my passion for crafting user-centric solutions, and
+              now I am looking to join a dynamic IT company where I can
+              contribute to innovative projects and grow professionally. With a
+              balanced blend of technical and soft skills, I am ready and eager
+              to make a meaningful impact in an agile, innovation-driven
+              environment.
             </p>
           </div>
           <div className="bottom-zone">

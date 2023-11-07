@@ -130,6 +130,21 @@
       "urlGithub": "https://github.com/Latteflo/v-card"
     },
     {
+      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/221/original/preview.png?1693432277",
+      "title": "Dark Kitchen Online Delivery - Fergelishos",
+      "technologies": [
+        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
+        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" },
+        {
+          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
+          "name": "JavaScript"
+        }
+      ],
+      "description": "A dynamic single-page restaurant menu application designed for a Dark Kitchen online delivery service. It includes features such as responsive design, dish listing, categorization, and a shopping cart. Developed as part of BeCode challenges by a team including Oana, Louis, and Florentina.",
+      "url": "https://fergalicious.netlify.app/",
+      "urlGithub": "https://github.com/Latteflo/the_best_Dark_Kitchen_ever"
+    },
+    {
       "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/219/original/weather-becode.gif?1693432177",
       "title": "Weather Application",
       "technologies": [
@@ -145,7 +160,7 @@
       "urlGithub": "https://github.com/Latteflo/BeCode-Weather-App-Vite"
     },
     {
-      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/222/original/movieCollection.png?1693432451",
+      "cover": "https://github.com/Latteflo/Ghilbi-Movies-Collection/raw/main/assets/ghilbi.gif",
       "title": "Ghilbi Movies Collection",
       "technologies": [
         { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
@@ -158,21 +173,6 @@
       "description": "Ghilbi Movies Collection is a dynamic, playful, and interactive web-based collection of Ghilbi Movies. Built as part of BeCode training, the project focuses on JavaScript consolidation concepts. The interface allows seamless navigation and interaction, providing a detailed view of each movie in the collection.",
       "url": "https://ghibli-movies-collection-sf.netlify.app/",
       "urlGithub": "https://github.com/Latteflo/Ghilbi-Movies-Collection"
-    },
-    {
-      "cover": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/221/original/preview.png?1693432277",
-      "title": "Dark Kitchen Online Delivery - Fergelishos",
-      "technologies": [
-        { "icon": "https://cdn.svgporn.com/logos/html-5.svg", "name": "HTML" },
-        { "icon": "https://cdn.svgporn.com/logos/css-3.svg", "name": "CSS" },
-        {
-          "icon": "https://cdn.svgporn.com/logos/javascript.svg",
-          "name": "JavaScript"
-        }
-      ],
-      "description": "A dynamic single-page restaurant menu application designed for a Dark Kitchen online delivery service. It includes features such as responsive design, dish listing, categorization, and a shopping cart. Developed as part of BeCode challenges by a team including Oana, Louis, and Florentina.",
-      "url": "https://fergalicious.netlify.app/",
-      "urlGithub": "https://github.com/Latteflo/the_best_Dark_Kitchen_ever"
     }
   ]
 }
