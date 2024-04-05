@@ -14,9 +14,6 @@ import {
   faTwitter,
   faCodepen,
 } from '@fortawesome/free-brands-svg-icons'
-import dotenv from 'dotenv'
-
-dotenv.config()
 
 const Sidebar = () => {
   return (

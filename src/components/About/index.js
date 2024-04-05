@@ -10,9 +10,7 @@ import {
   faCodepen,
 } from '@fortawesome/free-brands-svg-icons'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
-import dotenv from 'dotenv'
 
-dotenv.config()
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
