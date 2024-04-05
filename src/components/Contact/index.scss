@@ -16,7 +16,7 @@ $accent-color: #13ffe0;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
 
     @media (max-width: 930px) {

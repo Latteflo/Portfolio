@@ -32,11 +32,12 @@ $accent-color: #13ffe0;
       width: 100%;
 
       h2 {
-        font-size: 7rem;
+        font-size: 6rem;
         font-family: "Cinzel";
         color: #fff;
         font-weight: 400;
         margin: 0;
+        padding: 0;
 
         @media (max-width: 930px) {
           margin-top: 14%;
@@ -145,5 +146,17 @@ $accent-color: #13ffe0;
         }
       }
     }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }

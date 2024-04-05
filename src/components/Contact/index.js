@@ -57,8 +57,7 @@ const Contact = () => {
               <a href={`tel:${process.env.REACT_APP_PHONE}`}>
                 <FontAwesomeIcon icon={faPhone} />
               </a>
-
-              <a href={`https://www.linkedin.com/in/${process.env.REACT_APP_LINKEDIN_URL}`}>
+              <a href={process.env.REACT_APP_LINKEDIN_URL}>
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a href={process.env.REACT_APP_GITHUB_URL}>

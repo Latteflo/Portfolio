@@ -33,7 +33,14 @@ const About = () => {
               />
             </h2>
             <div>
-              <h2>Hey there! I'm Flo.</h2>
+              <h2>Hey there! I'm 
+                <span className={`${letterClass} _14 special`}> F</span>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={['l', 'o', '.']}
+                  idx={15}
+                />
+                </h2>
               <p>
                 My journey started up in the air, literally, as a flight
                 attendant. That job taught me a ton about adapting to new
