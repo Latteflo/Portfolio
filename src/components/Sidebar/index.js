@@ -14,6 +14,9 @@ import {
   faTwitter,
   faCodepen,
 } from '@fortawesome/free-brands-svg-icons'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const Sidebar = () => {
   return (
@@ -22,7 +25,7 @@ const Sidebar = () => {
         <span className="logo">
           <Link className="logo" to="/">
             <img src={LogoS} alt="logo" />
-          </Link>{' '}
+          </Link>
         </span>
         <span className="links-main">
           <NavLink exact="true" activeclassname="active" to="/">
@@ -57,28 +60,28 @@ const Sidebar = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/florentina-s-a97bba73/"
+            href={process.env.REACT_APP_LINKEDIN_URL}
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/Latteflo"
+            href={process.env.REACT_APP_GITHUB_URL}
           >
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-          </a>{' '}
+          </a>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://twitter.com/Simi_Flo/"
+            href={process.env.REACT_APP_TWITTER_URL}
           >
             <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://codepen.io/latteflo"
+            href={process.env.REACT_APP_CODEPEN_URL}
           >
             <FontAwesomeIcon icon={faCodepen} color="#4d4d4e" />
           </a>

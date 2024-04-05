@@ -16,6 +16,7 @@
     "chokidar": "^3.5.3",
     "core-js": "^3.26.1",
     "css-loader": "^6.7.3",
+    "dotenv": "^16.4.5",
     "framer-motion": "^8.0.1",
     "gsap": "^3.11.4",
     "gsap-trial": "^3.11.4",

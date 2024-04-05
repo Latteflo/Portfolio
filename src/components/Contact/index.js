@@ -3,10 +3,12 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const Contact = () => {
   const form = useRef()
@@ -24,8 +26,8 @@ const Contact = () => {
         'gmail-sf',
         'template_webpage',
         form.current,
-        'TLiQpez9SH3JdqU5d'
-      )
+        process.env.REACT_APP_EMAILJS_USER_ID
+        )
       .then(
         () => {
           alert('Message successfully sent!')
@@ -51,20 +53,17 @@ const Contact = () => {
               />
             </h2>
             <span className="socials">
-              <a href="mailto:sf.simion.f@gmail.com">
+            <a href={`mailto:${process.env.REACT_APP_EMAIL}`}>
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
-              <a href="tel:+40729784503">
+              <a href={`tel:${process.env.REACT_APP_PHONE}`}>
                 <FontAwesomeIcon icon={faPhone} />
               </a>
-              <a href="https://api.whatsapp.com/send?phone=+40729784503">
-                <FontAwesomeIcon icon={faWhatsapp} />
-              </a>
 
-              <a href="https://www.linkedin.com/in/florentina-s-a97bba73//">
+              <a href={`https://www.linkedin.com/in/${process.env.REACT_APP_LINKEDIN_URL}`}>
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-              <a href="https://github.com/Latteflo">
+              <a href={process.env.REACT_APP_GITHUB_URL}>
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </span>

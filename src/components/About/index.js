@@ -10,6 +10,9 @@ import {
   faCodepen,
 } from '@fortawesome/free-brands-svg-icons'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -31,29 +34,38 @@ const About = () => {
                 idx={15}
               />
             </h2>
-            <p>
-              In the heart of Belgium's tech community, I'm building a bridge
-              between the structured world of aviation and the innovative space
-              of full-stack development. My background in flying has taught me
-              precision and adaptability, traits I now apply to coding. Whether
-              it's front-end design or back-end logic, I bring the same
-              attention to detail. Currently active in the collaborative &
-              immersive learning environment of BeCode, I am sharpening my skill
-              set to embrace the challenges and opportunities of the
-              ever-evolving digital landscape.
-            </p>
-            <p>
-              I am quietly confident, naturally curious, and a team-player who
-              is continuously improving my skills.
-            </p>
-            <p>
-              I have found my passion for crafting user-centric solutions, and
-              now I am looking to join a dynamic IT company where I can
-              contribute to innovative projects and grow professionally. With a
-              balanced blend of technical and soft skills, I am ready and eager
-              to make a meaningful impact in an agile, innovation-driven
-              environment.
-            </p>
+            <div>
+              <h2>Hey there! I'm Flo.</h2>
+              <p>
+                My journey started up in the air, literally, as a flight
+                attendant. That job taught me a ton about adapting to new
+                situations, working closely with all sorts of people, and the
+                thrill of diving into new experiences. Now, I've traded in my
+                wings for web development and cybersecurity, where I get to
+                tackle different kinds of challenges but with the same
+                excitement.
+              </p>
+              <p>
+                These days, I'm sharpening my skills at BeCode, getting my hands
+                dirty with both the design side of things and the nitty-gritty
+                of back-end logic. It's all about making stuff that not only
+                looks good but works well too.
+              </p>
+              <p>
+                When I'm not coding, you might find me swimming, hunting down
+                the best coffee spots or planning my next travel adventure. I love to
+                keep learning, whether it's a new programming language or the
+                latest in cyber security, to make sure I'm always bringing my
+                A-game.
+              </p>
+              <p>
+                I'm on the lookout for a cool IT company where I can put my
+                skills to good use, work on projects that matter, and keep
+                growing. I bring a mix of team spirit, a keen eye for detail,
+                and a whole lot of enthusiasm to everything I do. Let's make
+                something awesome together.
+              </p>
+            </div>
           </div>
           <div className="bottom-zone">
             <div className="reach">
@@ -70,35 +82,34 @@ const About = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.linkedin.com/in/florentina-s-a97bba73/"
+                  href={process.env.REACT_APP_LINKEDIN_URL}
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/Latteflo"
+                  href={process.env.REACT_APP_GITHUB_URL}
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>{' '}
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://twitter.com/Simi_Flo/"
+                  href={process.env.REACT_APP_TWITTER_URL}
                 >
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://codepen.io/latteflo"
+                  href={process.env.REACT_APP_CODEPEN_URL}
                 >
                   <FontAwesomeIcon icon={faCodepen} />
                 </a>
               </span>
             </div>
             <span class="wordcloud">
-              {' '}
               <WordCloud />
             </span>
           </div>
