@@ -24,6 +24,7 @@
     "loaders.css": "^0.1.2",
     "modal": "^1.2.0",
     "parcel-bundler": "^1.12.5",
+    "portfolio": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-id-swiper": "^4.0.0",
