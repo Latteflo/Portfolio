@@ -4,8 +4,8 @@ $accent-color: #13ffe0;
   display: inline-block;
   opacity: 0;
   animation: bounceIn;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-duration: 0.6s; // Faster - was 1s
+  animation-delay: 0.1s; // Start sooner - was 0.5s
   animation-fill-mode: forwards;
   min-width: 10px;
 }
@@ -18,13 +18,12 @@ $accent-color: #13ffe0;
   &:hover {
     animation: rubberBand 2s;
     animation-fill-mode: both;
-    color: $accent-color ;
+    color: $accent-color;
   }
 }
 
 @for $i from 1 through 50 {
   .text-animate._#{$i} {
-    animation-delay: #{0.1s * $i};
+    animation-delay: #{0.03s * $i}; // Much faster - was 0.1s per letter
   }
 }
-

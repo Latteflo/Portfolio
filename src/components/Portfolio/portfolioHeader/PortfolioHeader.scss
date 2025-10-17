@@ -3,16 +3,14 @@ $white: #fff;
 
 .content-header {
   font-family: "Cinzel";
-  width: 75%;
-  height: max-content;
-  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media (max-width: 930px) {
-    padding-top: 3%;
-    width: 80%;
+    margin-bottom: 3rem;
   }
 
   .text-zone {
@@ -21,14 +19,13 @@ $white: #fff;
       justify-content: flex-start;
       align-items: center;
       color: $white;
-      font-size: 7rem;
-      font-weight: 400;
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 700;
+      margin: 0 0 1rem 0;
       transition: color 0.4s ease;
-      margin: 4rem 0 0 0  ;
 
       @media (max-width: 930px) {
-        margin-top: 6rem;
-        font-size: 6rem;
+        font-size: clamp(2.5rem, 6vw, 4rem);
       }
 
       .special {
@@ -42,10 +39,10 @@ $white: #fff;
     }
 
     .page-description {
-      color: $white;
-      font-size: 1.8rem;
-      font-weight: 400;
-      margin-bottom: 2rem;
+      color: #8d8d8d;
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      font-weight: 300;
+      margin: 0;
       transition: color 0.4s ease;
     }
   }

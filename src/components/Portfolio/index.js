@@ -24,13 +24,13 @@ const Portfolio = () => {
     setShowModal(false)
   }
   
-  const reversedPortfolioData = [...PortfolioData.portfolio].reverse();
+  const reversedPortfolioData = [...PortfolioData.portfolio].reverse()
 
   return (
     <>
       <div className="portfolio-page">
-        <PortfolioHeader letterClass={letterClass} />
         <div className="portfolio-data">
+          <PortfolioHeader letterClass={letterClass} />
           <PortfolioGrid
             portfolioData={reversedPortfolioData}
             expanded={expanded}
@@ -47,7 +47,7 @@ const Portfolio = () => {
         )}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

@@ -19,16 +19,19 @@ $accent-color: #13ffe0;
 
     .logo {
       margin: 1rem;
+      
       img {
         display: block;
-        width: 50px;     
+        width: 50px;
         border-radius: 50%;
         border: 2px solid $accent-color;
+        transition: all 0.3s ease;
 
-      }
-      img:hover {
-        cursor: pointer;
-        color: $accent-color;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+          box-shadow: 0 0 15px rgba($accent-color, 0.5);
+        }
       }
     }
 
@@ -84,6 +87,7 @@ $accent-color: #13ffe0;
           }
         }
       }
+
       a.about-link {
         &:after {
           content: 'ABOUT';
@@ -101,6 +105,7 @@ $accent-color: #13ffe0;
           content: 'MY WORK';
         }
       }
+
       a.active {
         svg {
           color: $accent-color;
@@ -108,6 +113,7 @@ $accent-color: #13ffe0;
       }
     }
   }
+
   .social-links {
     display: flex;
     flex-direction: column;
@@ -115,12 +121,21 @@ $accent-color: #13ffe0;
     align-items: center;
     width: 100%;
     margin-bottom: 1rem;
+    padding: 0;
+    list-style: none;
+
+    li {
+      list-style: none;
+    }
 
     a {
       font-size: 20px;
       padding: 6px;
+      transition: all 0.3s ease;
+
       &:hover svg {
         color: $accent-color;
+        transform: scale(1.2);
       }
     }
   }
@@ -133,13 +148,26 @@ $accent-color: #13ffe0;
     position: fixed;
     top: 0;
     left: 0;
+
     nav {
       flex-direction: row;
       justify-content: space-between;
+      padding: 0 2rem;
+
+      .logo {
+        margin: 0;
+      }
+
       .links-main {
         display: flex;
         flex-direction: row;
+        gap: 1rem;
+
+        a:after {
+          display: none;
+        }
       }
+
       .social-links {
         display: none;
       }

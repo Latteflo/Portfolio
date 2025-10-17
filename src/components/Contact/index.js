@@ -1,31 +1,34 @@
-import { useEffect, useState } from 'react'
+import './index.scss'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+  faCodepen,
+} from '@fortawesome/free-brands-svg-icons'
 
+const SOCIAL_LINKS = {
+  linkedin: process.env.REACT_APP_LINKEDIN_URL,
+  github: process.env.REACT_APP_GITHUB_URL,
+  twitter: process.env.REACT_APP_TWITTER_URL,
+  codepen: process.env.REACT_APP_CODEPEN_URL
+}
 
 const Contact = () => {
   const form = useRef()
-  const [letterClass, setLetterClass] = useState('text-animate')
 
-  useEffect(() => {
-    setLetterClass('text-animate-hover');
-  }, []);
-
-    const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
       .sendForm(
-        'gmail-sf',
-        'template_webpage',
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_EMAILJS_USER_ID
-        )
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
       .then(
         () => {
           alert('Message successfully sent!')
@@ -42,34 +45,29 @@ const Contact = () => {
       <div className="contact-page">
         <div className="contact-content">
           <div className="intro">
-            <h2 className='title'>
-              <span className={`${letterClass} _14 special`}>C</span>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={['o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-                idx={15}
-              />
-            </h2>
-            <span className="socials">
-            <a href={`mailto:${process.env.REACT_APP_EMAIL}`}>
-                <FontAwesomeIcon icon={faEnvelope} />
-              </a>
-              <a href={`tel:${process.env.REACT_APP_PHONE}`}>
-                <FontAwesomeIcon icon={faPhone} />
-              </a>
-              <a href={process.env.REACT_APP_LINKEDIN_URL}>
+            <h1>
+              <span className="special">C</span>ontact me
+            </h1>
+            <div className="socials">
+              <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-              <a href={process.env.REACT_APP_GITHUB_URL}>
+              <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
-            </span>
+              <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a href={SOCIAL_LINKS.codepen} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faCodepen} />
+              </a>
+            </div>
           </div>
           <div className="text-zone">
-            <p>I am interested in new opportunities.</p>
             <p>
-              If you have other request or question, don't hesitate to contact
-              me!
+              I am interested in freelance opportunities - especially ambitious or
+              large projects. However, if you have other request or question,
+              don't hesitate to contact me using below form either.
             </p>
           </div>
           <div className="contact-form-map">
@@ -77,35 +75,16 @@ const Contact = () => {
               <form ref={form} onSubmit={sendEmail}>
                 <ul>
                   <li className="half">
-                    <input
-                      placeholder="Name"
-                      type="text"
-                      name="name"
-                      required
-                    />
+                    <input placeholder="Name" type="text" name="name" required />
                   </li>
                   <li className="half">
-                    <input
-                      placeholder="Email"
-                      type="email"
-                      name="email"
-                      required
-                    />
+                    <input placeholder="Email" type="email" name="email" required />
                   </li>
                   <li>
-                    <input
-                      placeholder="Subject"
-                      type="text"
-                      name="subject"
-                      required
-                    />
+                    <input placeholder="Subject" type="text" name="subject" required />
                   </li>
                   <li>
-                    <textarea
-                      placeholder="Message"
-                      name="message"
-                      required
-                    ></textarea>
+                    <textarea placeholder="Message" name="message" required></textarea>
                   </li>
                   <li>
                     <input type="submit" className="flat-button" value="SEND" />
