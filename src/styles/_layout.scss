@@ -1,0 +1,60 @@
+// Shared layout variables and mixins
+$sidebar-width: 8rem;
+$sidebar-mobile-height: 8rem;
+
+// Mixin for consistent page container
+@mixin page-container {
+  position: fixed;
+  top: 0;
+  left: $sidebar-width;
+  width: calc(100% - #{$sidebar-width});
+  height: 100vh;
+  background: #000;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @media (max-width: 930px) {
+    left: 0;
+    top: $sidebar-mobile-height;
+    width: 100%;
+    height: calc(100vh - #{$sidebar-mobile-height});
+  }
+}
+
+// Mixin for consistent content wrapper
+@mixin content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+
+  @media (max-width: 930px) {
+    padding: 3rem 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 2rem 1rem;
+  }
+}
+
+// Mixin for page headers
+@mixin page-header {
+  margin-bottom: 3rem;
+
+  @media (max-width: 930px) {
+    margin-bottom: 2rem;
+  }
+
+  h1, h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    color: #fff;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: rgba(#fff, 0.85);
+    line-height: 1.6;
+    margin: 0;
+  }
+}

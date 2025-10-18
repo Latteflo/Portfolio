@@ -1,52 +1,83 @@
-$accent-color: #13ffe0;
-$white: #fff;
+$accent-color: #e90948;
+$secondary-accent: #13ffe0;
 
 .content-header {
-  font-family: "Cinzel";
-  width: 75%;
+  font-family: 'Cinzel', serif;
+  width: 85%;
+  max-width: 1400px;
   height: max-content;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem 0 3rem;
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 
   @media (max-width: 930px) {
-    padding-top: 3%;
-    width: 80%;
+    padding-top: 2rem;
+    width: 90%;
+  }
+
+  @media (max-width: 600px) {
+    width: 95%;
+    padding: 1rem 0 2rem;
   }
 
   .text-zone {
+    text-align: center;
+
     .page-title {
-      display: flex;
-      justify-content: flex-start;
+      display: inline-flex;
+      justify-content: center;
       align-items: center;
-      color: $white;
-      font-size: 7rem;
-      font-weight: 400;
-      transition: color 0.4s ease;
-      margin: 4rem 0 0 0  ;
+      color: #fff;
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 700;
+      transition: all 0.3s ease;
+      margin: 0 auto 2rem;
+      letter-spacing: 3px;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s backwards;
 
       @media (max-width: 930px) {
-        margin-top: 6rem;
-        font-size: 6rem;
+        font-size: clamp(2.5rem, 7vw, 6rem);
+        margin-bottom: 1.5rem;
       }
 
       .special {
         color: $accent-color;
-        transition: color 0.4s ease;
+        transition: all 0.3s ease;
 
         &:hover {
-          color: $white;
+          color: $secondary-accent;
+          text-shadow: 0 0 30px rgba($secondary-accent, 0.6);
         }
       }
     }
 
     .page-description {
-      color: $white;
-      font-size: 1.8rem;
+      color: #a0a0a0;
+      font-size: clamp(1rem, 2vw, 1.2rem);
       font-weight: 400;
-      margin-bottom: 2rem;
+      line-height: 1.8;
+      margin: 0 auto 3rem;
+      max-width: 700px;
       transition: color 0.4s ease;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s backwards;
+
+      @media (max-width: 768px) {
+        margin-bottom: 2.5rem;
+      }
     }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

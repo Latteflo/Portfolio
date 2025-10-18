@@ -20,10 +20,11 @@ const Sidebar = () => {
     <div className="nav-bar">
       <nav className="nav-content">
         <span className="logo">
-          <Link className="logo" to="/">
-            <img src={LogoS} alt="logo" />
+          <Link to="/">
+            <img src={LogoS} alt="Logo" />
           </Link>
         </span>
+
         <span className="links-main">
           <NavLink exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
@@ -51,8 +52,9 @@ const Sidebar = () => {
             to="/contact"
           >
             <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-          </NavLink>{' '}
+          </NavLink>
         </span>
+
         <span className="social-links">
           <a
             target="_blank"
