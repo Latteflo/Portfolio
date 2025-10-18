@@ -1,4 +1,6 @@
 import './index.scss'
+import { useState, useEffect } from 'react'
+import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
@@ -16,6 +18,15 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
+  const [letterClass, setLetterClass] = useState('text-animate')
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 3000)
+    return () => clearTimeout(timer)
+  }, [])
+
   const skills = [
     'React', 'JavaScript', 'TypeScript', 'Node.js',
     'HTML5', 'CSS3', 'SCSS', 'Tailwind',
@@ -28,7 +39,12 @@ const About = () => {
       <div className="about-container">
         <div className="about-header">
           <h1 className="page-title">
-            <span className="accent">A</span>bout Me
+            <span className={`${letterClass} _14 accent`}>A</span>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={['b', 'o', 'u', 't', ' ', 'M', 'e']}
+              idx={15}
+            />
           </h1>
           <p className="subtitle">
             Full-Stack Developer & Cybersecurity Enthusiast

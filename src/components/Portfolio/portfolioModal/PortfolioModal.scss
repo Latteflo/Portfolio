@@ -5,11 +5,11 @@ $accent-color: #13ffe0;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  z-index: 999;
-  transition: opacity 0.3s ease;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
 
   &.show-modal {
     display: flex;
@@ -20,58 +20,46 @@ $accent-color: #13ffe0;
 
   .close-button {
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    font-size: 1.5rem;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 2px solid $accent-color;
+    font-size: 2rem;
     cursor: pointer;
-    color: white;
+    color: $accent-color;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
     z-index: 1001;
+    font-weight: 300;
 
     &:hover {
       background: $accent-color;
       color: #000;
       transform: rotate(90deg);
-    }
-
-    @media (max-width: 600px) {
-      top: 1rem;
-      right: 1rem;
-      width: 2.5rem;
-      height: 2.5rem;
-      font-size: 1.2rem;
+      box-shadow: 0 0 20px rgba($accent-color, 0.6);
     }
   }
 
   .modal-content {
     background: #181818;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 3rem;
     width: 90%;
     max-width: 800px;
     max-height: 85vh;
     overflow-y: auto;
     position: relative;
-    border: 1px solid rgba($accent-color, 0.2);
+    border: 1px solid rgba($accent-color, 0.3);
+    box-shadow: 0 20px 60px rgba($accent-color, 0.2);
 
     @media (max-width: 930px) {
       padding: 2rem;
       width: 95%;
-      max-height: 90vh;
-    }
-
-    @media (max-width: 600px) {
-      padding: 1.5rem;
-      border-radius: 15px;
     }
 
     h2 {
@@ -79,92 +67,108 @@ $accent-color: #13ffe0;
       font-size: 2.5rem;
       margin-bottom: 1.5rem;
       color: #fff;
-      font-weight: 600;
+      font-family: "Cinzel";
 
-      @media (max-width: 600px) {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
+      @media (max-width: 930px) {
+        font-size: 2rem;
       }
     }
 
     img {
       width: 100%;
       height: auto;
-      max-height: 400px;
-      object-fit: cover;
       border-radius: 10px;
       margin-bottom: 1.5rem;
-
-      @media (max-width: 600px) {
-        max-height: 250px;
-        border-radius: 8px;
-      }
+      border: 1px solid rgba($accent-color, 0.2);
     }
 
     p {
       margin: 1rem 0;
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #ccc;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: #b0b0b0;
+      font-family: sans-serif;
 
-      @media (max-width: 600px) {
+      @media (max-width: 930px) {
         font-size: 1rem;
-        margin: 0.8rem 0;
       }
     }
 
     .links {
       display: flex;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.5rem;
       margin-top: 2rem;
-      flex-wrap: wrap;
 
       button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+        padding: 14px 32px;
+        font-size: 1.1rem;
         border: 2px solid $accent-color;
         border-radius: 8px;
         cursor: pointer;
-        background-color: transparent;
+        background: transparent;
         color: $accent-color;
-        transition: all 0.3s ease;
+        font-family: sans-serif;
         font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
 
-        &:hover {
-          background-color: $accent-color;
-          color: #000;
-          transform: translateY(-2px);
-          box-shadow: 0 5px 15px rgba($accent-color, 0.3);
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: $accent-color;
+          z-index: 0;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.35s ease;
         }
 
-        @media (max-width: 600px) {
-          padding: 0.6rem 1.2rem;
-          font-size: 0.9rem;
+        span {
+          position: relative;
+          z-index: 1;
+        }
+
+        &:hover {
+          color: #000;
+          box-shadow: 0 0 20px rgba($accent-color, 0.5);
+          transform: translateY(-2px);
+
+          &::after {
+            transform: scaleX(1);
+          }
+        }
+
+        @media (max-width: 930px) {
+          padding: 10px 24px;
+          font-size: 0.95rem;
         }
       }
     }
 
-    // Custom Scrollbar
+    // Custom scrollbar
     &::-webkit-scrollbar {
       width: 8px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: $accent-color;
+      background-color: rgba($accent-color, 0.5);
       border-radius: 4px;
-    }
 
-    &::-webkit-scrollbar-thumb:hover {
-      background-color: darken($accent-color, 10%);
+      &:hover {
+        background-color: rgba($accent-color, 0.7);
+      }
     }
 
     &::-webkit-scrollbar-track {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.05);
     }
-
-    scrollbar-color: $accent-color rgba(255, 255, 255, 0.1);
-    scrollbar-width: thin;
   }
 }
 
@@ -173,17 +177,6 @@ $accent-color: #13ffe0;
     opacity: 0;
   }
   to {
-    opacity: 1;
-  }
-}
-
-@keyframes blowUp {
-  from {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
     opacity: 1;
   }
 }

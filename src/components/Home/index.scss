@@ -1,90 +1,337 @@
-@import '../../styles/layout';
-
-$accent-color: #13ffe0;
+$accent-color: #e90948;
+$secondary-accent: #13ffe0;
 
 .home-page {
-  @include page-container;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  background: #000;
 
+  // Canvas for particles
   .particles-canvas {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 0;
+    cursor: none;
+  }
+
+  // Subtle corner ambient lighting
+  .ambient-lights {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
+    z-index: 0;
+
+    .light-corner {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.08;
+
+      @media (max-width: 960px) {
+        width: 400px;
+        height: 400px;
+        filter: blur(80px);
+      }
+    }
+
+    .light-top-left {
+      top: -250px;
+      left: -250px;
+      background: radial-gradient(circle, $secondary-accent, transparent 60%);
+    }
+
+    .light-bottom-right {
+      bottom: -250px;
+      right: -250px;
+      background: radial-gradient(circle, $accent-color, transparent 60%);
+    }
+  }
+
+  // Animated background gradient orbs
+  .bg-orbs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      animation: pulse-glow 8s ease-in-out infinite;
+
+      @media (max-width: 960px) {
+        filter: blur(50px);
+      }
+    }
+
+    .orb-1 {
+      width: 400px;
+      height: 400px;
+      top: -100px;
+      right: -80px;
+      background: radial-gradient(circle, rgba($accent-color, 0.12), transparent 70%);
+      animation-delay: 0s;
+
+      @media (max-width: 960px) {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    .orb-2 {
+      width: 450px;
+      height: 450px;
+      bottom: -120px;
+      left: -100px;
+      background: radial-gradient(circle, rgba($secondary-accent, 0.1), transparent 70%);
+      animation-delay: 4s;
+
+      @media (max-width: 960px) {
+        width: 280px;
+        height: 280px;
+      }
+    }
   }
 
   .text-zone {
-    @include content-wrapper;
+    width: 70%;
+    transition: all 0.3s ease;
     position: relative;
     z-index: 2;
+
+    @media (max-width: 960px) {
+      width: 85%;
+    }
+
+    @media (max-width: 548px) {
+      width: 90%;
+    }
   }
 
   .special {
-    color: $accent-color;
+    font-size: 12rem;
+    font-family: "laBelleAurore";
+    color: $secondary-accent;
+
+    @media (max-width: 960px) {
+      font-size: 7rem;
+    }
+
+    @media (max-width: 548px) {
+      font-size: 6.5rem;
+    }
+
+    @media (max-width: 470px) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 5rem;
+    }
   }
 
   h1 {
     color: #fff;
-    display: block;
-    font-size: clamp(4rem, 8vw, 9rem);
-    margin: 0 0 1rem 0;
-    font-family: 'laBelleAurore';
+    display: inline-block;
+    font-size: 9rem;
+    margin: 0;
+    font-family: "laBelleAurore";
     font-weight: 400;
+    transition: all 0.3s ease;
     line-height: 1.2;
+
+    @media (max-width: 960px) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: 548px) {
+      font-size: 5rem;
+    }
+
+    @media (max-width: 470px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 3rem;
+    }
   }
 
-  h2 {
+  h2.job-title {
     color: #fff;
-    font-size: clamp(3rem, 6vw, 7rem);
-    margin: 0 0 2rem 0;
-    font-family: 'laBelleAurore';
+    font-size: 7rem;
+    margin: 10px 0 0 0;
+    font-family: "laBelleAurore";
     font-weight: 400;
+    transition: all 0.3s ease;
+    position: relative;
+
+    // Simple underline
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, $accent-color, $secondary-accent);
+      opacity: 0.6;
+    }
+
+    @media (max-width: 960px) {
+      font-size: 5rem;
+    }
+
+    @media (max-width: 548px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 470px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 2.6rem;
+    }
   }
 
-  h3 {
+  h3.aspirations {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     color: #8d8d8d;
-    margin: 0 0 3rem 0;
+    margin: 30px 0 40px 0;
     font-weight: 400;
     font-family: sans-serif;
-    letter-spacing: 2px;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    line-height: 1.6;
-    animation: fadeInUp 1s ease-out;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1s backwards;
+    transition: all 0.3s ease;
+
+    .code-comment {
+      color: $secondary-accent;
+      font-family: monospace;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 960px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 470px) {
+      font-size: 1rem;
+    }
+  }
+
+  .cta-wrapper {
+    margin-top: 30px;
+    animation: fadeIn 1s 1.2s backwards;
   }
 
   .flat-button {
+    position: relative;
     display: inline-block;
     text-align: center;
-    color: $accent-color;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: $secondary-accent;
+    font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
-    padding: 1rem 2.5rem;
-    border: 2px solid $accent-color;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    
+    padding: 16px 32px;
+    border: 2px solid $secondary-accent;
+    overflow: hidden;
+    transition: all 250ms ease;
+    background: transparent;
+
+    .button-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .button-arrow {
+      display: inline-block;
+      transition: transform 250ms ease;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $secondary-accent;
+      z-index: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 350ms ease;
+    }
+
     &:hover {
-      background: $accent-color;
+      border-color: $secondary-accent;
       color: #000;
+      box-shadow: 0 0 20px rgba($secondary-accent, 0.4);
       transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba($accent-color, 0.4);
+
+      &::after {
+        transform: scaleX(1);
+      }
+
+      .button-arrow {
+        transform: translateX(5px);
+      }
+    }
+
+    &:active {
+      transform: translateY(0px);
+    }
+
+    @media (max-width: 960px) {
+      font-size: 1.2rem;
+      padding: 14px 28px;
+    }
+
+    @media (max-width: 548px) {
+      font-size: 1rem;
+      padding: 12px 24px;
     }
   }
 }
 
-@keyframes fadeInUp {
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;

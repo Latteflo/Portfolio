@@ -1,28 +1,69 @@
+$accent-color: #e90948;
+$secondary-accent: #13ffe0;
+
 .portfolio-page {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 8rem;
-  width: calc(100% - 8rem);
-  height: 100vh;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
   background: #000;
-  padding: 0;
+  padding: 3rem 0;
   margin: 0;
+  overflow-x: hidden;
   overflow-y: auto;
 
   @media (max-width: 930px) {
-    left: 0;
-    top: 8rem;
-    width: 100%;
-    height: calc(100vh - 8rem);
+    padding: 2rem 0;
+    padding-top: 7rem;
   }
 }
 
 .portfolio-data {
-  max-width: 1200px;
+  width: 85%;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 0;
 
   @media (max-width: 930px) {
-    padding: 2rem 1rem;
+    width: 90%;
+  }
+
+  @media (max-width: 600px) {
+    width: 95%;
+  }
+}
+
+.portfolio-separator {
+  width: 85%;
+  max-width: 1400px;
+  height: 4px;
+  background: linear-gradient(90deg, $accent-color, $secondary-accent);
+  margin: 3rem auto;
+  border-radius: 2px;
+  animation: expandWidth 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s backwards;
+
+  @media (max-width: 930px) {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  @media (max-width: 768px) {
+    height: 3px;
+  }
+
+  @media (max-width: 600px) {
+    width: 95%;
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
   }
 }

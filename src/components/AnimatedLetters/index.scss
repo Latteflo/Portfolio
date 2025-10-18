@@ -1,29 +1,72 @@
-$accent-color: #13ffe0;
+$accent-color: #e90948;
+$secondary-accent: #13ffe0;
 
 .text-animate {
   display: inline-block;
   opacity: 0;
-  animation: bounceIn;
-  animation-duration: 0.6s; // Faster - was 1s
-  animation-delay: 0.1s; // Start sooner - was 0.5s
+  animation: bounceIn 1s;
   animation-fill-mode: forwards;
   min-width: 10px;
 }
 
 .text-animate-hover {
   min-width: 10px;
-  display: inline;
+  display: inline-block;
   animation-fill-mode: both;
+  cursor: default;
+  transition: color 0.3s ease;
 
   &:hover {
-    animation: rubberBand 2s;
+    animation: rubberBand 1s;
     animation-fill-mode: both;
-    color: $accent-color;
+    color: $secondary-accent;
   }
 }
 
 @for $i from 1 through 50 {
   .text-animate._#{$i} {
-    animation-delay: #{0.03s * $i}; // Much faster - was 0.1s per letter
+    animation-delay: #{$i * 0.05s};
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.15, 0.85);
+  }
+  40% {
+    transform: scale(0.85, 1.15);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    transform: scale(1);
   }
 }

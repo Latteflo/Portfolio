@@ -11,7 +11,10 @@ const Portfolio = () => {
   const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
-    setLetterClass('text-animate-hover')
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 3000)
+    return () => clearTimeout(timer)
   }, [])
 
   const handleExpand = (idx) => {
@@ -29,8 +32,11 @@ const Portfolio = () => {
   return (
     <>
       <div className="portfolio-page">
+        <PortfolioHeader letterClass={letterClass} />
+        
+        <div className="portfolio-separator"></div>
+        
         <div className="portfolio-data">
-          <PortfolioHeader letterClass={letterClass} />
           <PortfolioGrid
             portfolioData={reversedPortfolioData}
             expanded={expanded}
@@ -39,6 +45,7 @@ const Portfolio = () => {
             showModal={showModal}
           />
         </div>
+        
         {showModal && expanded != null && (
           <PortfolioModal
             port={reversedPortfolioData[expanded]}
