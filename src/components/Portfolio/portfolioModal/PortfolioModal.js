@@ -10,6 +10,7 @@ const sanitizeUrl = (url) => {
   if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
     // Block javascript:, data:, and other dangerous protocols
     const lowerUrl = trimmed.toLowerCase()
+    // eslint-disable-next-line no-script-url
     if (lowerUrl.includes('javascript:') || 
         lowerUrl.includes('data:') ||
         lowerUrl.includes('vbscript:') ||

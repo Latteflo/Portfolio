@@ -289,7 +289,7 @@ const Home = () => {
         </h2>
         
         <h3 className='aspirations'>
-          <span className="code-comment">//</span> Developer / Cybersecurity Enthusiast / Skilled Full-Stack Craftswoman
+          <span className="code-comment">{"//"}</span> Developer / Cybersecurity Enthusiast / Skilled Full-Stack Craftswoman
         </h3>
         
         <div className="cta-wrapper">
